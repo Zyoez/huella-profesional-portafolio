@@ -1,0 +1,20 @@
+{
+  "name": "huella-profesional-manifiesto-etica",
+  "version": "1.0.0",
+  "description": "Homepage del Portafolio Digital: Manifiesto de Identidad Ética (EC1) - Universidad Científica del Sur",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "audit:words": "node check_words.js"
+  },
+  "keywords": [
+    "etica",
+    "portafolio",
+    "ucsur",
+    "deontologia",
+    "arquitectura-interiores",
+    "ingenieria-sistemas"
+  ],
+  "author": "Equipo LO QUE SOMOS",
+  "license": "MIT"
+}

@@ -1,0 +1,136 @@
+/* Estilos personalizados: Portafolio Digital "Huella Profesional" - Manifiesto de Identidad Ética */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Cinzel:wght@600;700;800&display=swap');
+
+:root {
+  --bg-parchment: #FBF9F5;
+  --bg-card: #FFFFFF;
+  --text-primary: #1C1917;
+  --text-secondary: #57534E;
+  --text-muted: #78716C;
+  --accent-navy: #0F2A4A;
+  --accent-gold: #B8860B;
+  --accent-gold-light: #F4E8C1;
+  --accent-crimson: #8C2424;
+  --accent-emerald: #1B5E3C;
+  --border-subtle: #E7E5E4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-parchment);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+/* Tipografías editoriales */
+.font-serif-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+/* Texturas sutiles de museo editorial */
+.paper-texture {
+  background-color: #fcfbf9;
+  background-image: radial-gradient(#e2ded7 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+/* Hotspots animados sobre lienzos */
+.hotspot-point {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(184, 134, 11, 0.92);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 rgba(184, 134, 11, 0.6);
+  animation: pulse-gold 2s infinite;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  z-index: 20;
+}
+
+.hotspot-point:hover {
+  transform: translate(-50%, -50%) scale(1.25);
+  background: #0F2A4A;
+}
+
+@keyframes pulse-gold {
+  0% {
+    box-shadow: 0 0 0 0 rgba(184, 134, 11, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(184, 134, 11, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(184, 134, 11, 0);
+  }
+}
+
+/* Efectos de tarjeta museo */
+.museum-card {
+  background: #FFFFFF;
+  border: 1px solid #EAE7E1;
+  box-shadow: 0 4px 25px -4px rgba(28, 25, 23, 0.05);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.museum-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px -6px rgba(15, 42, 74, 0.1);
+  border-color: #D6D1C7;
+}
+
+/* Pirámide de Scheler escalonada */
+.pyramid-tier {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.pyramid-tier:hover {
+  filter: brightness(1.04);
+  transform: translateY(-2px);
+}
+
+.pyramid-tier.active-tier {
+  box-shadow: 0 0 0 3px #B8860B, 0 10px 25px -5px rgba(15, 42, 74, 0.25);
+  transform: translateY(-3px);
+}
+
+/* Barra de progreso de lectura */
+#reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0F2A4A, #B8860B);
+  z-index: 100;
+  transition: width 0.1s linear;
+}
+
+/* Modo Sustentación (destaque para examen oral) */
+body.presentation-mode .academic-quote {
+  background-color: #FEF3C7 !important;
+  border-left: 4px solid #B8860B !important;
+  padding: 1rem !important;
+  border-radius: 0.375rem;
+}
+
+body.presentation-mode .key-stat {
+  transform: scale(1.05);
+  font-weight: 700;
+  color: #0F2A4A;
+}
