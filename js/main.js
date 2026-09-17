@@ -7,11 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
   initReadingProgress();
   initWordCounter();
   initArtworkHotspots();
-  initPeruMapInteractions();
+  initFacesMapInteractions();
   initSchelerPyramid();
   initShadowsLightsToggle();
   initPresentationMode();
   initSmoothScroll();
+  initCoverCarousel();
 });
 
 /* ==========================================================================
@@ -164,82 +165,109 @@ function initArtworkHotspots() {
 }
 
 /* ==========================================================================
-   4. Mapa geográfico del Perú interactivo (Poblaciones vulnerables)
+   4. Mapa interactivo de rostros y realidades vulnerables (AC2)
    ========================================================================== */
 const populationInfo = {
   'pop-discapacidad': {
-    tag: 'Arquitectura de Interiores & Seguridad Humana',
-    title: '1. Personas con Discapacidad en Espacios Comerciales y Residenciales',
-    region: 'Lima Metropolitana (Mesa Redonda, Gamarra, Lince) y Ciudades Principales',
-    stat: 'El 10.4% de la población peruana presenta alguna discapacidad (INEI, 2017), pero más del 78% de locales comerciales y galerías en Lima carecen de rutas de evacuación universales o señalización táctil/podotáctil.',
-    vulnerability: 'Son vulnerables porque en el Perú se prioriza maximizar el área útil vendible o abaratar costos reduciendo el ancho de pasadizos, anulando rampas con pendientes reglamentarias y bloqueando salidas de emergencia. Ante un sismo o siniestro, no tienen posibilidad de evacuar por sí mismos.',
-    bioethics: 'Justicia y Autonomía: La justicia distributiva exige equiparar las condiciones de accesibilidad sin segregación. La autonomía se vulnera al forzar a la persona con discapacidad a una dependencia forzada de terceros para ingresar, desplazarse o salvar su vida.',
-    action: 'Incorporar el Diseño Universal desde el anteproyecto preliminar, auditar los anchos de circulación según la Norma A.120 del RNE y no negociar los márgenes de seguridad por presiones presupuestarias del cliente.'
+    tag: 'Arquitectura de Interiores & Diseño Universal',
+    badgeClass: 'bg-amber-100 text-amber-900 border-amber-300',
+    icon: '♿',
+    title: '1. Personas con discapacidad en espacios públicos, comerciales o residenciales',
+    whyVulnerable: 'Son vulnerables porque muchas veces se prioriza la estética o reducir costos antes que la accesibilidad. En el Perú, cuando no se cumplen las normas de diseño universal, se generan barreras arquitectónicas y sensoriales en espacios comerciales, corporativos y residenciales, lo que limita su movilidad y autonomía.',
+    bioethicsPrinciple: 'Justicia y autonomía',
+    bioethicsDetail: 'La justicia implica garantizar que todas las personas tengan un acceso equitativo a los espacios, sin que su discapacidad sea una barrera. La autonomía se relaciona con diseñar espacios que les permitan movilizarse y realizar sus actividades de manera segura e independiente, sin depender de otras personas.',
+    statEvidence: 'En el Perú, más de 3.1 millones de personas viven con alguna limitación permanente (INEI). En galerías y centros comerciales informales de Lima, las vías de evacuación y servicios carecen de accesibilidad podotáctil y rampas normalizadas.',
+    ethicalAction: 'Incorporar el diseño universal y la seguridad desde el anteproyecto preliminar, sustentar ante el cliente por qué ciertos materiales y anchos de circulación no son negociables, y dejar constancia escrita de las observaciones técnicas.'
   },
   'pop-adultos': {
-    tag: 'Diseño para el Envejecimiento & Bienestar Residencial',
-    title: '2. Personas Adultas Mayores en Viviendas y Entornos Urbanos',
-    region: 'Nivel Nacional (Lima, Arequipa, La Libertad, Lambayeque)',
-    stat: 'En el Perú viven más de 4.1 millones de adultos mayores (INEI, 2023). El 67% de las caídas graves en esta población ocurren dentro de su propia vivienda debido a pisos resbaladizos, iluminación deficiente y desniveles imprevistos.',
-    vulnerability: 'El parque inmobiliario peruano se concibe exclusivamente para cuerpos jóvenes y vigorosos. Los adultos mayores enfrentan barreras sensoriales y motrices que reducen su vida social al confinamiento doméstico, acelerando el deterioro cognitivo y la depresión por aislamiento.',
-    bioethics: 'Beneficencia y No Maleficencia (Beauchamp & Childress, 2019): El profesional tiene el deber de procurar el bienestar integral (beneficencia) y la obligación primordial de no causar daño involuntario (*primum non nocere*) mediante un hábitat peligroso o excluyente.',
-    action: 'Implementar criterios de arquitectura gerontológica: pisos antideslizantes de coeficiente adecuado, barras de sujeción ergonómicas integradas con diseño digno, iluminación difusa sin deslumbramientos y supresión de umbrales en puertas.'
+    tag: 'Diseño Gerontológico & Hábitat Residencial',
+    badgeClass: 'bg-blue-100 text-blue-900 border-blue-300',
+    icon: '👴',
+    title: '2. Personas adultas mayores en viviendas y espacios públicos o comerciales',
+    whyVulnerable: 'En el Perú, gran parte del parque inmobiliario y de los espacios públicos no contempla el diseño para el envejecimiento (rampas, iluminación adecuada, mobiliario ergonómico, señalética clara). Esto aumenta el riesgo de caídas, aislamiento y dependencia de terceros para realizar actividades cotidianas.',
+    bioethicsPrinciple: 'Beneficencia y no maleficencia',
+    bioethicsDetail: 'El diseño de interiores tiene el deber de promover el bienestar de las personas mayores (beneficencia) y de evitar que un espacio mal planificado se convierta en una fuente de daño físico, accidentes graves o de exclusión social (no maleficencia).',
+    statEvidence: 'En el Perú, más del 13% de la población es adulta mayor (INEI). El 67% de los traumatismos graves por caídas en personas mayores se producen dentro del propio domicilio por desniveles, mala iluminación o pisos resbaladizos.',
+    ethicalAction: 'Aplicar criterios de arquitectura del envejecimiento: supresión de umbrales, instalación de barras de sujeción ergonómicas con diseño digno, iluminación difusa no deslumbrante y pisos con coeficiente antideslizante certificado.'
   },
   'pop-algoritmos': {
-    tag: 'Ingeniería Empresarial y de Sistemas & Gobernanza de Datos',
-    title: '3. Postulantes y Trabajadores ante Algoritmos de Selección Sesgados',
-    region: 'Centros Corporativos, Sector Bancario y Plataformas de Trabajo Digital en el Perú',
-    stat: 'Investigaciones en Perú evidencian que el 64% de empresas medianas y grandes emplean filtros automatizados de ATS o scoring; sin embargo, menos del 5% audita los sesgos de género o procedencia geográfica de sus modelos predictivos.',
-    vulnerability: 'Mujeres en edad fértil, egresados de universidades de provincia y personas de sectores socioeconómicos vulnerables son descartados automáticamente sin intervención humana y sin justificación transparente, perpetuando barreras de movilidad social.',
-    bioethics: 'Justicia y Dignidad Ontológica (Kant, 1785): Reducir a un profesional a una puntuación estadística opaca vulnera su dignidad ontológica, tratándolo como un mero insumo utilitario. Se quebranta la justicia distributiva al premiar correlaciones espurias.',
-    action: 'Establecer protocolos de gobernanza de datos éticos: anonimización de currículums en fase de preselección, auditorías periódicas de sesgo algorítmico, explicabilidad obligatoria de rechazos y garantía de apelación ante un comité humano.'
+    tag: 'Ingeniería Empresarial y de Sistemas & Ética de Datos',
+    badgeClass: 'bg-emerald-100 text-emerald-900 border-emerald-300',
+    icon: '💻',
+    title: '3. Postulantes y trabajadores evaluados por sistemas empresariales automatizados',
+    whyVulnerable: 'Estos sistemas suelen entrenarse con datos históricos que ya contienen sesgos de género, edad o procedencia. Si una empresa peruana automatiza procesos sin auditar sus datos, corre el riesgo de excluir injustamente a personas calificadas, como ocurrió con algoritmos de contratación que penalizaban currículums de mujeres o egresados de provincia.',
+    bioethicsPrinciple: 'No maleficencia y justicia',
+    bioethicsDetail: 'Quien diseña o administra estos sistemas debe evitar que causen un daño no intencional (no maleficencia) y garantizar que las decisiones automatizadas distribuyan las oportunidades de manera equitativa, reconociendo a cada persona como fin y no como dato útil (justicia y dignidad ontológica kantiana).',
+    statEvidence: 'El uso de software ATS (Applicant Tracking Systems) y scoring automatizado creció más de un 120% en el sector corporativo peruano; sin embargo, menos del 4% de empresas audita la representatividad y equidad de sus bases de datos.',
+    ethicalAction: 'Auditar periódicamente los datos y resultados de los sistemas, documentar los criterios de decisión en un lenguaje que el área usuaria entienda, exigir revisión humana obligatoria (human-in-the-loop) y capacitar al equipo en sesgos algorítmicos.'
   }
 };
 
-function initPeruMapInteractions() {
-  const displayCard = document.getElementById('map-details-card');
-  const filterBtns = document.querySelectorAll('.map-filter-btn');
-  const pins = document.querySelectorAll('.map-pin');
+function initFacesMapInteractions() {
+  const displayCard = document.getElementById('faces-details-card');
+  const filterBtns = document.querySelectorAll('.face-filter-btn');
+  const hotspots = document.querySelectorAll('.face-hotspot');
 
   if (!displayCard) return;
 
-  function updateMapCard(key) {
+  function updateFacesCard(key) {
     const data = populationInfo[key];
     if (!data) return;
 
     displayCard.innerHTML = `
       <div class="transition-all duration-300">
-        <span class="inline-block px-3 py-1 bg-amber-100 text-amber-900 font-semibold text-xs rounded-full uppercase tracking-wider mb-3">
-          ${data.tag}
-        </span>
-        <h4 class="text-xl font-bold font-serif-title text-stone-900 mb-2">${data.title}</h4>
-        <div class="flex items-center gap-2 text-xs text-stone-500 font-medium mb-4">
-          <svg class="w-4 h-4 text-amber-700 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-          ${data.region}
-        </div>
-        
-        <div class="p-3 bg-stone-50 rounded-lg border border-stone-200 text-sm text-stone-700 mb-4">
-          <span class="font-bold text-stone-900">Evidencia cuantitativa:</span> ${data.stat}
+        <div class="flex items-center justify-between gap-2 mb-3">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 font-semibold text-xs rounded-full border ${data.badgeClass}">
+            <span>${data.icon}</span>
+            <span>${data.tag}</span>
+          </span>
+          <span class="text-[10px] text-stone-400 font-mono font-semibold">Ficha Oficial AC2</span>
         </div>
 
-        <div class="space-y-3 text-sm leading-relaxed text-stone-700">
-          <div>
-            <strong class="text-stone-900 font-semibold block mb-1">Causas de vulnerabilidad en el ejercicio profesional:</strong>
-            <p>${data.vulnerability}</p>
+        <h4 class="text-xl font-bold font-serif-title text-stone-900 mb-3 leading-snug">
+          ${data.title}
+        </h4>
+
+        <!-- Tabla estructurada del AC2 -->
+        <div class="space-y-3.5 text-xs sm:text-sm text-stone-700 leading-relaxed">
+          
+          <!-- Pregunta 1 del AC2 -->
+          <div class="p-3.5 bg-stone-50 rounded-lg border border-stone-200">
+            <strong class="text-stone-900 font-bold block mb-1 flex items-center gap-1.5 text-xs uppercase tracking-wider">
+              <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+              ¿Por qué es vulnerable en tu contexto profesional?
+            </strong>
+            <p class="text-stone-700">${data.whyVulnerable}</p>
           </div>
-          <div class="p-3 bg-amber-50/70 border-l-4 border-amber-600 rounded-r-lg">
-            <strong class="text-amber-900 font-semibold block mb-1">Tensión Bioética y Derechos Humanos:</strong>
-            <p class="text-amber-950 text-xs sm:text-sm">${data.bioethics}</p>
+
+          <!-- Pregunta 2 del AC2 -->
+          <div class="p-3.5 bg-amber-50/70 rounded-lg border border-amber-200">
+            <strong class="text-amber-950 font-bold block mb-1 flex items-center gap-1.5 text-xs uppercase tracking-wider">
+              <span class="w-2 h-2 rounded-full bg-gold-600"></span>
+              ¿Qué principio de bioética o de dignidad se pone en juego?
+            </strong>
+            <p class="font-semibold text-amber-900 mb-1">${data.bioethicsPrinciple}</p>
+            <p class="text-amber-950/90 text-xs">${data.bioethicsDetail}</p>
           </div>
-          <div>
-            <strong class="text-stone-900 font-semibold block mb-1">Compromiso de acción positiva:</strong>
-            <p class="text-emerald-800 font-medium">${data.action}</p>
+
+          <!-- Datos de contexto real peruano -->
+          <div class="p-3 bg-stone-100/80 rounded-lg text-xs text-stone-600 border border-stone-200">
+            <span class="font-bold text-stone-800">Evidencia cuantitativa (Perú):</span> ${data.statEvidence}
           </div>
+
+          <!-- Acciones Positivas del Profesional -->
+          <div class="p-3 bg-emerald-50/80 rounded-lg border border-emerald-200 text-xs">
+            <strong class="text-emerald-950 font-bold block mb-1 uppercase tracking-wider">
+              Acción Positiva Deontológica:
+            </strong>
+            <p class="text-emerald-900 font-medium">${data.ethicalAction}</p>
+          </div>
+
         </div>
       </div>
     `;
 
-    // Resaltar pin y botón activo
+    // Resaltar botón activo
     filterBtns.forEach(btn => {
       if (btn.getAttribute('data-pop') === key) {
         btn.classList.add('bg-stone-900', 'text-white', 'shadow-md');
@@ -250,29 +278,33 @@ function initPeruMapInteractions() {
       }
     });
 
-    pins.forEach(pin => {
-      if (pin.getAttribute('data-pop') === key) {
-        pin.classList.add('scale-125', 'ring-4', 'ring-amber-500');
+    // Resaltar y animar los hotspots de esa población en el collage
+    hotspots.forEach(hs => {
+      if (hs.getAttribute('data-pop') === key) {
+        hs.classList.add('scale-125', 'ring-4', 'ring-gold-500', 'z-30');
+        hs.style.opacity = '1';
       } else {
-        pin.classList.remove('scale-125', 'ring-4', 'ring-amber-500');
+        hs.classList.remove('scale-125', 'ring-4', 'ring-gold-500', 'z-30');
+        hs.style.opacity = '0.55';
       }
     });
   }
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      updateMapCard(btn.getAttribute('data-pop'));
+      updateFacesCard(btn.getAttribute('data-pop'));
     });
   });
 
-  pins.forEach(pin => {
-    pin.addEventListener('click', () => {
-      updateMapCard(pin.getAttribute('data-pop'));
+  hotspots.forEach(hs => {
+    hs.addEventListener('click', (e) => {
+      e.stopPropagation();
+      updateFacesCard(hs.getAttribute('data-pop'));
     });
   });
 
-  // Carga inicial con la primera población
-  updateMapCard('pop-discapacidad');
+  // Carga inicial con la primera población (Discapacidad)
+  updateFacesCard('pop-discapacidad');
 }
 
 /* ==========================================================================
@@ -475,3 +507,88 @@ function initSmoothScroll() {
     });
   });
 }
+
+/* ==========================================================================
+   9. Carrusel automático de imágenes de fondo para la portada
+   ========================================================================== */
+function initCoverCarousel() {
+  const slides = document.querySelectorAll('.cover-slide');
+  const buttons = document.querySelectorAll('.carousel-nav-btn');
+  const statusText = document.getElementById('carousel-status-text');
+  const portada = document.getElementById('portada');
+
+  if (slides.length === 0) return;
+
+  const slideTitles = [
+    '1. Atrio & Red',
+    '2. Taller & Algoritmos',
+    '3. Holograma Espacial'
+  ];
+
+  let currentIndex = 0;
+  let autoplayTimer = null;
+  const AUTOPLAY_INTERVAL = 5000; // 5 segundos
+
+  function goToSlide(index) {
+    currentIndex = (index + slides.length) % slides.length;
+
+    // Alternar opacidad suave de las diapositivas
+    slides.forEach((slide, i) => {
+      if (i === currentIndex) {
+        slide.classList.remove('opacity-0');
+        slide.classList.add('opacity-100');
+      } else {
+        slide.classList.remove('opacity-100');
+        slide.classList.add('opacity-0');
+      }
+    });
+
+    // Actualizar estado de los botones
+    buttons.forEach((btn, i) => {
+      if (i === currentIndex) {
+        btn.classList.add('bg-gold-500', 'text-navy-950', 'border-gold-400', 'shadow');
+        btn.classList.remove('bg-navy-950/60', 'text-stone-300', 'border-white/20');
+      } else {
+        btn.classList.remove('bg-gold-500', 'text-navy-950', 'border-gold-400', 'shadow');
+        btn.classList.add('bg-navy-950/60', 'text-stone-300', 'border-white/20');
+      }
+    });
+
+    // Actualizar texto del indicador
+    if (statusText) {
+      statusText.textContent = slideTitles[currentIndex] || `Imagen ${currentIndex + 1}`;
+    }
+  }
+
+  function startAutoplay() {
+    stopAutoplay();
+    autoplayTimer = setInterval(() => {
+      goToSlide(currentIndex + 1);
+    }, AUTOPLAY_INTERVAL);
+  }
+
+  function stopAutoplay() {
+    if (autoplayTimer) {
+      clearInterval(autoplayTimer);
+      autoplayTimer = null;
+    }
+  }
+
+  // Asignar eventos de clic a cada botón
+  buttons.forEach((btn, i) => {
+    btn.addEventListener('click', () => {
+      goToSlide(i);
+      startAutoplay(); // Reinicia el temporizador tras interacción
+    });
+  });
+
+  // Pausar al pasar el cursor para permitir lectura o apreciación detallada
+  if (portada) {
+    portada.addEventListener('mouseenter', stopAutoplay);
+    portada.addEventListener('mouseleave', startAutoplay);
+  }
+
+  // Iniciar carrusel automático
+  startAutoplay();
+}
+

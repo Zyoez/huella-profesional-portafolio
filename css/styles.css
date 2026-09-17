@@ -66,6 +66,25 @@ body {
   background: #0F2A4A;
 }
 
+/* Hotspots específicos para el mapa de rostros AC2 */
+.face-hotspot {
+  backdrop-filter: blur(2px);
+  border: 1.5px solid rgba(255, 255, 255, 0.95);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.face-hotspot[data-pop="pop-discapacidad"] {
+  background: rgba(184, 134, 11, 0.92);
+}
+
+.face-hotspot[data-pop="pop-adultos"] {
+  background: rgba(15, 42, 74, 0.92);
+}
+
+.face-hotspot[data-pop="pop-algoritmos"] {
+  background: rgba(27, 94, 60, 0.92);
+}
+
 @keyframes pulse-gold {
   0% {
     box-shadow: 0 0 0 0 rgba(184, 134, 11, 0.7);
