@@ -129,15 +129,37 @@ body {
   transform: translateY(-3px);
 }
 
-/* Barra de progreso de lectura */
-#reading-progress {
-  position: fixed;
-  top: 0;
+/* Indicador de sección activa en la barra de navegación */
+.nav-item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  transition: color 0.25s ease;
+}
+
+.nav-item .nav-indicator {
+  position: absolute;
+  bottom: 0;
   left: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #0F2A4A, #B8860B);
-  z-index: 100;
-  transition: width 0.1s linear;
+  width: 0%;
+  height: 3px;
+  background-color: #B8860B; /* Dorado distintivo */
+  border-radius: 9999px;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item:hover .nav-indicator {
+  width: 100%;
+}
+
+.nav-item.active {
+  color: #B8860B !important;
+  font-weight: 700;
+}
+
+.nav-item.active .nav-indicator {
+  width: 100% !important;
 }
 
 /* Modo Sustentación (destaque para examen oral) */

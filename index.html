@@ -46,9 +46,6 @@
 
 <body class="bg-parchment text-stone-800 antialiased selection:bg-gold-500 selection:text-white">
 
-  <!-- Barra de lectura superior -->
-  <div id="reading-progress"></div>
-
   <!-- Barra Superior de Navegación -->
   <header
     class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-sm transition-all duration-300">
@@ -59,13 +56,28 @@
         Huella Profesional
       </a>
 
-      <!-- Enlaces de navegación con mayor tamaño de letra y legibilidad -->
-      <nav class="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm sm:text-base font-semibold text-stone-700">
-        <a href="#portada" class="hover:text-gold-600 transition">Portada</a>
-        <a href="#metaforas" class="hover:text-gold-600 transition">Metáforas</a>
-        <a href="#vulnerabilidad" class="hover:text-gold-600 transition">Población Vulnerable</a>
-        <a href="#valores" class="hover:text-gold-600 transition">Jerarquía</a>
-        <a href="#mapa-critico" class="hover:text-gold-600 transition">Mapa Crítico</a>
+      <!-- Enlaces de navegación con indicador de sección activa (rayita dorada) -->
+      <nav id="main-nav" class="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm sm:text-base font-semibold text-stone-700">
+        <a href="#portada" class="nav-item relative py-2 transition text-stone-600 hover:text-gold-600">
+          Portada
+          <span class="nav-indicator absolute bottom-0 left-0 w-0 h-[3px] bg-gold-500 rounded-full transition-all duration-300"></span>
+        </a>
+        <a href="#metaforas" class="nav-item relative py-2 transition text-stone-600 hover:text-gold-600">
+          Metáforas
+          <span class="nav-indicator absolute bottom-0 left-0 w-0 h-[3px] bg-gold-500 rounded-full transition-all duration-300"></span>
+        </a>
+        <a href="#vulnerabilidad" class="nav-item relative py-2 transition text-stone-600 hover:text-gold-600">
+          Población Vulnerable
+          <span class="nav-indicator absolute bottom-0 left-0 w-0 h-[3px] bg-gold-500 rounded-full transition-all duration-300"></span>
+        </a>
+        <a href="#valores" class="nav-item relative py-2 transition text-stone-600 hover:text-gold-600">
+          Jerarquía
+          <span class="nav-indicator absolute bottom-0 left-0 w-0 h-[3px] bg-gold-500 rounded-full transition-all duration-300"></span>
+        </a>
+        <a href="#mapa-critico" class="nav-item relative py-2 transition text-stone-600 hover:text-gold-600">
+          Mapa Crítico
+          <span class="nav-indicator absolute bottom-0 left-0 w-0 h-[3px] bg-gold-500 rounded-full transition-all duration-300"></span>
+        </a>
       </nav>
 
       <!-- Indicador de Cumplimiento de Palabras (Oculto a petición) -->

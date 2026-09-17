@@ -4,7 +4,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initReadingProgress();
+  initScrollSpy();
   initWordCounter();
   initArtworkHotspots();
   initFacesMapInteractions();
@@ -16,17 +16,42 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ==========================================================================
-   1. Barra de progreso de lectura superior
+   1. Detector de sección activa en la barra de navegación (Scrollspy con rayita dorada)
    ========================================================================== */
-function initReadingProgress() {
-  const progressBar = document.getElementById('reading-progress');
-  if (!progressBar) return;
+function initScrollSpy() {
+  const sections = document.querySelectorAll('section[id]');
+  const navItems = document.querySelectorAll('.nav-item');
 
-  window.addEventListener('scroll', () => {
-    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const progress = totalHeight > 0 ? (window.scrollY / totalHeight) * 100 : 0;
-    progressBar.style.width = `${progress}%`;
-  });
+  function updateActiveNav() {
+    const scrollPos = window.scrollY + 180;
+    let currentId = 'portada';
+
+    sections.forEach(section => {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      const id = section.getAttribute('id');
+      if (scrollPos >= top && scrollPos < top + height) {
+        currentId = id;
+      }
+    });
+
+    if (window.scrollY < 120) {
+      currentId = 'portada';
+    }
+
+    navItems.forEach(item => {
+      const href = item.getAttribute('href');
+      if (href === `#${currentId}`) {
+        item.classList.add('active');
+      } else {
+        item.classList.remove('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+  window.addEventListener('resize', updateActiveNav, { passive: true });
+  updateActiveNav();
 }
 
 /* ==========================================================================
