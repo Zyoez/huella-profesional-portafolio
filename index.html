@@ -54,12 +54,13 @@
     class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-sm transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <!-- Marca Principal: Solo Huella Profesional -->
-      <a href="#portada" class="font-serif sm:font-cinzel text-xl sm:text-2xl font-bold tracking-wide text-navy-900 hover:text-gold-600 transition">
+      <a href="#portada"
+        class="font-serif sm:font-cinzel text-xl sm:text-2xl font-bold tracking-wide text-navy-900 hover:text-gold-600 transition">
         Huella Profesional
       </a>
 
-      <!-- Enlaces de navegación reestructurados -->
-      <nav class="hidden md:flex items-center space-x-6 lg:space-x-8 text-xs font-semibold text-stone-600">
+      <!-- Enlaces de navegación con mayor tamaño de letra y legibilidad -->
+      <nav class="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm sm:text-base font-semibold text-stone-700">
         <a href="#portada" class="hover:text-gold-600 transition">Portada</a>
         <a href="#metaforas" class="hover:text-gold-600 transition">Metáforas</a>
         <a href="#vulnerabilidad" class="hover:text-gold-600 transition">Población Vulnerable</a>
@@ -67,11 +68,13 @@
         <a href="#mapa-critico" class="hover:text-gold-600 transition">Mapa Crítico</a>
       </nav>
 
-      <!-- Indicador de Cumplimiento de Rúbrica EC1 (1,200 - 1,500 palabras) -->
-      <div class="hidden sm:flex items-center gap-2 text-xs bg-stone-50 px-3 py-1.5 rounded-full border border-stone-200">
+      <!-- Indicador de Cumplimiento de Palabras (Oculto a petición) -->
+      <div class="hidden" aria-hidden="true" style="display: none !important;">
         <span class="text-stone-500 font-medium">Palabras:</span>
         <span id="academic-word-count" class="font-bold text-navy-900">1,253</span>
-        <span id="academic-word-status" class="text-[10px] px-2 py-0.5 rounded-full font-semibold bg-emerald-100 text-emerald-800 border border-emerald-200">EC1: 1,200-1,500</span>
+        <span id="academic-word-status"
+          class="text-[10px] px-2 py-0.5 rounded-full font-semibold bg-emerald-100 text-emerald-800 border border-emerald-200">EC1:
+          1,200-1,500</span>
       </div>
     </div>
   </header>
@@ -138,7 +141,7 @@
 
     <!-- Contenido Central Monumental -->
     <div
-      class="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 text-center flex flex-col items-center justify-center my-auto">
+      class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 text-center flex flex-col items-center justify-center my-auto">
       <!-- Título Monumental -->
       <h1
         class="text-5xl sm:text-7xl lg:text-8xl font-serif font-bold tracking-tight text-white mb-6 leading-none drop-shadow-[0_6px_24px_rgba(0,0,0,0.85)]">
@@ -151,7 +154,7 @@
           class="relative px-6 py-5 sm:px-10 sm:py-6 rounded-2xl bg-navy-950/90 backdrop-blur-md border-2 border-gold-500/60 shadow-[0_12px_35px_rgba(0,0,0,0.7)] text-center">
           <p
             class="text-xl sm:text-2xl lg:text-3xl font-serif font-semibold italic text-white tracking-wide leading-relaxed drop-shadow-md">
-            «Diseño que inspira, tecnología que transforma e innovación que conecta.»
+            "Diseño que inspira, tecnología que transforma e innovación que conecta."
           </p>
         </div>
       </div>
@@ -165,50 +168,42 @@
             </span>
             <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white drop-shadow">“LO QUE SOMOS”</h3>
           </div>
-          <div class="flex flex-wrap items-center gap-2">
-            <span
-              class="px-3 py-1 bg-amber-500/20 text-amber-200 rounded-full border border-amber-400/40 text-xs font-semibold backdrop-blur-sm">Arquitectura
-              de Interiores (3)</span>
-            <span
-              class="px-3 py-1 bg-sky-500/20 text-sky-200 rounded-full border border-sky-400/40 text-xs font-semibold backdrop-blur-sm">Ing.
-              Empresarial y de Sistemas (2)</span>
-          </div>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 pt-5">
           <!-- 1. Alvarado Paquiyauri, Anthonella -->
           <div
             class="p-4 bg-black/40 backdrop-blur-md rounded-xl border border-white/15 hover:border-sky-400/80 hover:bg-black/60 hover:shadow-lg transition duration-300">
-            <p class="text-xs font-bold text-white leading-snug">Alvarado Paquiyauri, Anthonella</p>
-            <p class="mt-2 text-[11px] font-semibold text-sky-300">Ing. Empresarial y de Sistemas</p>
+            <p class="text-sm sm:text-base font-bold text-white leading-snug">Alvarado Paquiyauri, Anthonella</p>
+            <p class="mt-2 text-xs font-semibold text-sky-300">Ing. Empresarial y de Sistemas</p>
           </div>
 
           <!-- 2. Abanto Herrera, Brisa -->
           <div
             class="p-4 bg-black/40 backdrop-blur-md rounded-xl border border-white/15 hover:border-amber-400/80 hover:bg-black/60 hover:shadow-lg transition duration-300">
-            <p class="text-xs font-bold text-white leading-snug">Abanto Herrera, Brisa</p>
-            <p class="mt-2 text-[11px] font-semibold text-amber-300">Arquitectura de Interiores</p>
+            <p class="text-sm sm:text-base font-bold text-white leading-snug">Abanto Herrera, Brisa</p>
+            <p class="mt-2 text-xs font-semibold text-amber-300">Arquitectura de Interiores</p>
           </div>
 
           <!-- 3. Apaza Miranda, Dana -->
           <div
             class="p-4 bg-black/40 backdrop-blur-md rounded-xl border border-white/15 hover:border-amber-400/80 hover:bg-black/60 hover:shadow-lg transition duration-300">
-            <p class="text-xs font-bold text-white leading-snug">Apaza Miranda, Dana</p>
-            <p class="mt-2 text-[11px] font-semibold text-amber-300">Arquitectura de Interiores</p>
+            <p class="text-sm sm:text-base font-bold text-white leading-snug">Apaza Miranda, Dana</p>
+            <p class="mt-2 text-xs font-semibold text-amber-300">Arquitectura de Interiores</p>
           </div>
 
           <!-- 4. Valladares Ramos, Heidi -->
           <div
             class="p-4 bg-black/40 backdrop-blur-md rounded-xl border border-white/15 hover:border-amber-400/80 hover:bg-black/60 hover:shadow-lg transition duration-300">
-            <p class="text-xs font-bold text-white leading-snug">Valladares Ramos, Heidi</p>
-            <p class="mt-2 text-[11px] font-semibold text-amber-300">Arquitectura de Interiores</p>
+            <p class="text-sm sm:text-base font-bold text-white leading-snug">Valladares Ramos, Heidi</p>
+            <p class="mt-2 text-xs font-semibold text-amber-300">Arquitectura de Interiores</p>
           </div>
 
           <!-- 5. Zavala De la Cruz, Yohn Noe -->
           <div
             class="p-4 bg-black/40 backdrop-blur-md rounded-xl border border-white/15 hover:border-sky-400/80 hover:bg-black/60 hover:shadow-lg transition duration-300">
-            <p class="text-xs font-bold text-white leading-snug">Zavala De la Cruz, Yohn Noe</p>
-            <p class="mt-2 text-[11px] font-semibold text-sky-300">Ing. Empresarial y de Sistemas</p>
+            <p class="text-sm sm:text-base font-bold text-white leading-snug">Zavala De la Cruz, Yohn Noe</p>
+            <p class="mt-2 text-xs font-semibold text-sky-300">Ing. Empresarial y de Sistemas</p>
           </div>
         </div>
       </div>
@@ -238,14 +233,13 @@
         <div class="h-px bg-stone-200 flex-1"></div>
       </div>
       <h2 class="text-3xl sm:text-4xl font-serif font-bold text-navy-800 mb-3">
-        Propósito Profesional: La Estructura Oculta y la Recursividad
+        Propósito Profesional
       </h2>
       <p class="academic-text text-stone-600 text-sm sm:text-base max-w-4xl leading-relaxed mb-8">
-        El propósito ético no puede fundarse en discursos retóricos vacíos; exige un anclaje filosófico que vincule el
-        horizonte de realización humana (<em class="italic">eudaimonía</em>) con los hábitos técnicos y morales de
-        excelencia (<em class="italic">areté</em>) descritos por Aristóteles (349 a.C./2014). Nuestro equipo articula su
-        identidad en dos obras cumbre que dialogan con la arquitectura interior y la ingeniería de sistemas: <strong>Las
-          Meninas</strong> de Diego Velázquez y <strong>Manos Dibujando</strong> de M. C. Escher.
+        Nuestro propósito profesional va más allá de las palabras: busca unir la calidad técnica con el bienestar real
+        de las personas. Como equipo de Arquitectura de Interiores e Ingeniería Empresarial y de Sistemas, representamos
+        nuestra identidad y compromiso ético a través de dos grandes obras de arte: <strong>Las Meninas</strong> de
+        Diego Velázquez y <strong>Manos Dibujando</strong> de M. C. Escher.
       </p>
 
       <!-- Galería de Dos Metáforas con Hotspots -->
@@ -261,34 +255,33 @@
               </span>
               <span class="text-[11px] text-stone-400">Diego Velázquez (1656)</span>
             </div>
-            <h3 class="text-xl font-serif font-bold text-stone-900 mb-2">Las Meninas: La tramoya que sostiene el espacio
+            <h3 class="text-xl font-serif font-bold text-stone-900 mb-2">Las Meninas: La estructura que sostiene el
+              espacio
             </h3>
-            <p class="text-xs text-stone-500 mb-4">Museo Nacional del Prado, Madrid. Haz clic en los puntos interactivos
-              dorados para analizar su correlato deontológico.</p>
+            <p class="text-xs text-stone-500 mb-4">Museo Nacional del Prado, Madrid. Haz clic en los números dorados
+              para ver la explicación de cada punto clave.</p>
 
             <!-- Contenedor del Lienzo con Hotspots -->
             <div
               class="relative rounded-lg overflow-hidden border border-stone-300 bg-stone-900 aspect-[4/3] group shadow-inner">
-              <img
-                src="assets/las-meninas.jpg"
-                alt="Las Meninas de Diego Velázquez"
+              <img src="assets/las-meninas.jpg" alt="Las Meninas de Diego Velázquez"
                 class="w-full h-full object-cover object-center filter brightness-95 group-hover:brightness-100 transition duration-500" />
 
               <!-- Hotspots interactivos -->
-              <button class="hotspot-point top-[40%] left-[22%]" data-hotspot="meninas-1"
-                title="Clic para inspeccionar: El Bastidor Oculto (Areté)">
+              <button class="hotspot-point top-[28%] left-[15%]" data-hotspot="meninas-1"
+                title="1. El bastidor oculto: La calidad que no se ve">
                 <span class="text-xs font-bold">1</span>
               </button>
-              <button class="hotspot-point top-[32%] left-[47%]" data-hotspot="meninas-2"
-                title="Clic para inspeccionar: El Espejo (El Telos Humano)">
+              <button class="hotspot-point top-[15%] left-[31%]" data-hotspot="meninas-2"
+                title="2. El espejo al fondo: Las personas son lo primero">
                 <span class="text-xs font-bold">2</span>
               </button>
-              <button class="hotspot-point top-[68%] left-[51%]" data-hotspot="meninas-3"
-                title="Clic para inspeccionar: El Espacio Habitado (Convivencia y Confort)">
+              <button class="hotspot-point top-[58%] left-[58%]" data-hotspot="meninas-3"
+                title="3. El espacio compartido: Inclusión y accesibilidad">
                 <span class="text-xs font-bold">3</span>
               </button>
-              <button class="hotspot-point top-[36%] left-[64%]" data-hotspot="meninas-4"
-                title="Clic para inspeccionar: La Puerta Exterior (La Sociedad Peruana)">
+              <button class="hotspot-point top-[22%] left-[56%]" data-hotspot="meninas-4"
+                title="4. La puerta abierta: Compromiso con nuestra sociedad">
                 <span class="text-xs font-bold">4</span>
               </button>
 
@@ -300,15 +293,15 @@
           </div>
 
           <div class="mt-4 pt-4 border-t border-stone-100 text-xs text-stone-600 leading-relaxed">
-            <strong class="text-stone-900">Significado ético colectivo:</strong> En <em>Las Meninas</em>, la maestría
-            ocurre en el reverso del bastidor: aquello que el observador no ve sostiene la perspectiva. En arquitectura
-            de interiores, la <em>areté</em> no radica en el lujo visible, sino en la seguridad invisible: dimensionar
-            pasadizos amplios, asegurar materiales ignífugos y garantizar rutas de evacuación que salvan vidas ante un
-            siniestro.
+            <strong class="text-stone-900">Significado ético:</strong> En <em>Las Meninas</em>, el pintor trabaja detrás
+            de un gran bastidor que sostiene toda la perspectiva. En arquitectura de interiores, la ética consiste en
+            priorizar la seguridad y el confort real antes que la simple apariencia: asegurar rutas de evacuación
+            amplias, ventilación natural y materiales ignífugos que protejan la vida de las personas ante cualquier
+            emergencia.
           </div>
         </div>
 
-        <!-- Obra 2: Manos Dibujando (Ingeniería de Sistemas) -->
+        <!-- Obra 2: Manos Dibujando (Ingeniería Empresarial y de Sistemas) -->
         <div class="museum-card rounded-xl overflow-hidden p-5 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
@@ -318,33 +311,32 @@
               </span>
               <span class="text-[11px] text-stone-400">M. C. Escher (1948)</span>
             </div>
-            <h3 class="text-xl font-serif font-bold text-stone-900 mb-2">Manos Dibujando: La recursividad y la
-              responsabilidad algorítmica</h3>
-            <p class="text-xs text-stone-500 mb-4">Litografía original. Haz clic en los puntos interactivos dorados para
-              analizar el bucle ético del software.</p>
+            <h3 class="text-xl font-serif font-bold text-stone-900 mb-2">Manos Dibujando: La responsabilidad detrás de
+              cada sistema</h3>
+            <p class="text-xs text-stone-500 mb-4">Litografía original. Haz clic en los números dorados para ver la
+              explicación de cada punto clave.</p>
 
             <!-- Contenedor del Lienzo con Hotspots -->
             <div
               class="relative rounded-lg overflow-hidden border border-stone-300 bg-stone-900 aspect-[4/3] group shadow-inner">
-              <img src="assets/manos-dibujando.jpg"
-                alt="Drawing Hands de M. C. Escher"
+              <img src="assets/manos-dibujando.jpg" alt="Drawing Hands de M. C. Escher"
                 class="w-full h-full object-cover object-center filter brightness-95 group-hover:brightness-100 transition duration-500" />
 
               <!-- Hotspots interactivos -->
               <button class="hotspot-point top-[32%] left-[34%]" data-hotspot="escher-1"
-                title="Clic para inspeccionar: La Mano que Modela el Algoritmo">
+                title="1. La mano que dibuja: La responsabilidad de quien programa">
                 <span class="text-xs font-bold">1</span>
               </button>
               <button class="hotspot-point top-[68%] left-[66%]" data-hotspot="escher-2"
-                title="Clic para inspeccionar: El Bucle de Retroalimentación Social">
+                title="2. El impacto social: La tecnología cambia vidas">
                 <span class="text-xs font-bold">2</span>
               </button>
               <button class="hotspot-point top-[18%] left-[80%]" data-hotspot="escher-3"
-                title="Clic para inspeccionar: El Papel y los Datos Sesgados">
+                title="3. La base de datos: Cuidar que no haya prejuicios">
                 <span class="text-xs font-bold">3</span>
               </button>
               <button class="hotspot-point top-[78%] left-[24%]" data-hotspot="escher-4"
-                title="Clic para inspeccionar: La Obligación de Auditoría Humana">
+                title="4. La supervisión humana: Control y supervisión profesional">
                 <span class="text-xs font-bold">4</span>
               </button>
 
@@ -356,11 +348,11 @@
           </div>
 
           <div class="mt-4 pt-4 border-t border-stone-100 text-xs text-stone-600 leading-relaxed">
-            <strong class="text-stone-900">Significado ético colectivo:</strong> En <em>Manos Dibujando</em>, cada mano
-            da forma a la otra en un bucle recursivo. En la ingeniería de sistemas, los algoritmos no operan en el
-            vacío: son programados por seres humanos e impactan directamente en las oportunidades reales de los
-            ciudadanos. La responsabilidad deontológica reside en auditar los sesgos de la retroalimentación y no
-            desentenderse tras la excusa de que «el sistema lo decidió».
+            <strong class="text-stone-900">Significado ético:</strong> En <em>Manos Dibujando</em>, cada mano da forma a
+            la otra en un bucle continuo. En ingeniería de sistemas, los programas y algoritmos no son autónomos ni
+            neutrales: son diseñados por personas e influyen directamente en la vida de los ciudadanos. La
+            responsabilidad del profesional consiste en auditar el sistema y nunca desentenderse diciendo que «el
+            sistema lo decidió».
           </div>
         </div>
 
@@ -400,7 +392,7 @@
 
     <!-- ==========================================================================
     <!-- ==========================================================================
-         SECCIÓN 3: MAPA DE POBLACIÓN VULNERABLE ESPECÍFICA DE LA CARRERA (AC2)
+         SECCIÓN 3: MAPA DE POBLACIÓN VULNERABLE ESPECÍFICA DE LA CARRERA
          ========================================================================== -->
     <section id="vulnerabilidad" class="scroll-mt-20">
       <div class="flex items-center gap-3 mb-3">
@@ -411,7 +403,11 @@
         Responsabilidad Ética: Mapa de Rostros y Realidades Vulnerables
       </h2>
       <p class="academic-text text-stone-600 text-sm sm:text-base max-w-4xl leading-relaxed mb-6">
-        Sin el reconocimiento de los rostros vulnerables sobre quienes impacta nuestra labor, toda formulación de propósito ético corre el riesgo de quedarse en una abstracción retórica. A partir de la evidencia construida en el <strong>Aprendizaje Colaborativo 2 (AC2)</strong>, presentamos nuestro mapa de empatía visual sobre el collage oficial de realidades peruanas, articulando la experiencia de cada grupo con el marco kantiano de la dignidad humana y los cuatro principios de la bioética.
+        Sin el reconocimiento de los rostros vulnerables sobre quienes impacta nuestra labor, toda formulación de
+        propósito ético corre el riesgo de quedarse en una abstracción retórica. A partir de la evidencia construida en
+        el <strong>Aprendizaje Colaborativo 2</strong>, presentamos nuestro mapa de empatía visual sobre el collage
+        oficial de realidades peruanas, articulando la experiencia de cada grupo con el marco kantiano de la dignidad
+        humana y los cuatro principios de la bioética.
       </p>
 
       <!-- Selector de Poblaciones (Pestañas Interactivas) -->
@@ -420,19 +416,19 @@
           class="face-filter-btn px-4 py-2.5 rounded-lg text-xs font-semibold tracking-wide transition border border-stone-300 bg-stone-900 text-white shadow-sm flex items-center gap-2"
           data-pop="pop-discapacidad">
           <span>♿</span>
-          <span>1. Personas con Discapacidad (Diseño Universal)</span>
+          <span>1. Personas con Discapacidad</span>
         </button>
         <button
           class="face-filter-btn px-4 py-2.5 rounded-lg text-xs font-semibold tracking-wide transition border border-stone-300 bg-white text-stone-700 hover:bg-stone-50 flex items-center gap-2"
           data-pop="pop-adultos">
           <span>👴</span>
-          <span>2. Adultos Mayores (Hábitat Residencial)</span>
+          <span>2. Adultos Mayores</span>
         </button>
         <button
           class="face-filter-btn px-4 py-2.5 rounded-lg text-xs font-semibold tracking-wide transition border border-stone-300 bg-white text-stone-700 hover:bg-stone-50 flex items-center gap-2"
           data-pop="pop-algoritmos">
           <span>💻</span>
-          <span>3. Postulantes ante Algoritmos (Sistemas)</span>
+          <span>3. Postulantes ante Algoritmos</span>
         </button>
       </div>
 
@@ -443,90 +439,70 @@
         <div class="lg:col-span-7 museum-card rounded-xl p-5 bg-white border border-stone-200">
           <div class="flex items-center justify-between mb-3 pb-2 border-b border-stone-100">
             <div>
-              <h3 class="font-serif font-bold text-stone-900 text-lg">Mosaico de Rostros Vulnerables (AC2)</h3>
-              <p class="text-xs text-stone-500">Haz clic en los puntos interactivos sobre los rostros o en las pestañas superiores</p>
+              <h3 class="font-serif font-bold text-stone-900 text-lg">Mosaico de Rostros Vulnerables</h3>
+              <p class="text-xs text-stone-500">Haz clic en los puntos interactivos sobre los rostros o en las pestañas
+                superiores</p>
             </div>
-            <span class="text-[10px] font-bold text-gold-700 bg-gold-100 px-2.5 py-1 rounded border border-gold-300 uppercase">
-              Evidencia Real AC2
+            <span
+              class="text-[10px] font-bold text-gold-700 bg-gold-100 px-2.5 py-1 rounded border border-gold-300 uppercase">
+
             </span>
           </div>
 
           <!-- Contenedor del Collage con Hotspots Flotantes -->
           <div class="relative rounded-lg overflow-hidden border border-stone-300 bg-stone-900 group shadow-inner">
-            <img 
-              id="collage-main-img"
-              src="assets/collage-rostros-ac2.png" 
-              alt="Collage de rostros vulnerables elaborado por el equipo en AC2" 
-              class="w-full h-auto object-cover filter brightness-[0.98] transition duration-500"
-            />
+            <img id="collage-main-img" src="assets/collage-rostros-ac2.png"
+              alt="Collage de rostros vulnerables elaborado por el equipo en AC2"
+              class="w-full h-auto object-cover filter brightness-[0.98] transition duration-500" />
 
             <!-- Hotspots sobre Rostros de Adultos Mayores -->
-            <button 
-              class="hotspot-point face-hotspot top-[23%] left-[15%]" 
-              data-pop="pop-adultos" 
+            <button class="hotspot-point face-hotspot top-[23%] left-[15%]" data-pop="pop-adultos"
               title="Adulto mayor: Veredas rotas y barreras urbanas en Lima">
               <span class="text-[11px] font-bold">👴</span>
             </button>
-            <button 
-              class="hotspot-point face-hotspot top-[73%] left-[17%]" 
-              data-pop="pop-adultos" 
+            <button class="hotspot-point face-hotspot top-[73%] left-[17%]" data-pop="pop-adultos"
               title="Adulto mayor: Riesgo de caídas y diseño residencial de escaleras">
               <span class="text-[11px] font-bold">👴</span>
             </button>
-            <button 
-              class="hotspot-point face-hotspot top-[89%] left-[45%]" 
-              data-pop="pop-adultos" 
+            <button class="hotspot-point face-hotspot top-[89%] left-[45%]" data-pop="pop-adultos"
               title="Adulto mayor: Cuidados y ambientes de reposo seguros">
               <span class="text-[11px] font-bold">👴</span>
             </button>
 
             <!-- Hotspots sobre Postulantes y Equipos de Sistemas / Algoritmos -->
-            <button 
-              class="hotspot-point face-hotspot top-[20%] left-[45%]" 
-              data-pop="pop-algoritmos" 
+            <button class="hotspot-point face-hotspot top-[20%] left-[45%]" data-pop="pop-algoritmos"
               title="Sistemas: Comités empresariales y modelos algorítmicos">
               <span class="text-[11px] font-bold">💻</span>
             </button>
-            <button 
-              class="hotspot-point face-hotspot top-[54%] left-[47%]" 
-              data-pop="pop-algoritmos" 
+            <button class="hotspot-point face-hotspot top-[54%] left-[47%]" data-pop="pop-algoritmos"
               title="Sistemas: Filtros de selección de personal automatizados">
               <span class="text-[11px] font-bold">💻</span>
             </button>
-            <button 
-              class="hotspot-point face-hotspot top-[9%] left-[82%]" 
-              data-pop="pop-algoritmos" 
+            <button class="hotspot-point face-hotspot top-[9%] left-[82%]" data-pop="pop-algoritmos"
               title="Sistemas: Análisis predictivo y métricas de desempeño">
               <span class="text-[11px] font-bold">💻</span>
             </button>
 
             <!-- Hotspots sobre Personas con Discapacidad -->
-            <button 
-              class="hotspot-point face-hotspot top-[26%] left-[71%]" 
-              data-pop="pop-discapacidad" 
+            <button class="hotspot-point face-hotspot top-[26%] left-[71%]" data-pop="pop-discapacidad"
               title="Discapacidad: Movilidad accesible en transporte urbano">
               <span class="text-[11px] font-bold">♿</span>
             </button>
-            <button 
-              class="hotspot-point face-hotspot top-[48%] left-[82%]" 
-              data-pop="pop-discapacidad" 
+            <button class="hotspot-point face-hotspot top-[48%] left-[82%]" data-pop="pop-discapacidad"
               title="Discapacidad: Barreras arquitectónicas en servicios higiénicos">
               <span class="text-[11px] font-bold">♿</span>
             </button>
-            <button 
-              class="hotspot-point face-hotspot top-[84%] left-[85%]" 
-              data-pop="pop-discapacidad" 
+            <button class="hotspot-point face-hotspot top-[84%] left-[85%]" data-pop="pop-discapacidad"
               title="Discapacidad: Diseño universal en cocinas y mobiliario">
               <span class="text-[11px] font-bold">♿</span>
             </button>
-            <button 
-              class="hotspot-point face-hotspot top-[74%] left-[40%]" 
-              data-pop="pop-discapacidad" 
+            <button class="hotspot-point face-hotspot top-[74%] left-[40%]" data-pop="pop-discapacidad"
               title="Discapacidad: Desniveles y escalones en espacios exteriores">
               <span class="text-[11px] font-bold">♿</span>
             </button>
 
-            <div class="absolute bottom-2 right-2 bg-stone-900/85 text-[10px] text-stone-200 px-2.5 py-1 rounded backdrop-blur-sm pointer-events-none border border-stone-700 flex items-center gap-1.5">
+            <div
+              class="absolute bottom-2 right-2 bg-stone-900/85 text-[10px] text-stone-200 px-2.5 py-1 rounded backdrop-blur-sm pointer-events-none border border-stone-700 flex items-center gap-1.5">
               <span class="w-1.5 h-1.5 rounded-full bg-gold-400 animate-ping"></span>
               Puntos interactivos vinculados al AC2
             </div>
@@ -550,15 +526,26 @@
         </h4>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm text-stone-700 leading-relaxed">
           <div class="academic-quote border-l-2 border-stone-800 pl-3">
-            <strong class="text-stone-900 font-semibold block mb-1">Dignidad Ontológica vs. Dignidad Utilitaria (Kant)</strong>
+            <strong class="text-stone-900 font-semibold block mb-1">Dignidad Ontológica vs. Dignidad Utilitaria
+              (Kant)</strong>
             <p class="academic-text text-stone-700">
-              Kant (1785/2012) establece que la persona debe ser tratada siempre como un fin en sí misma y jamás como un mero medio. La dignidad ontológica es incondicional, inherente e inalienable a todo ser humano. En contraste, la dignidad utilitaria reduce al individuo a su utilidad económica o eficiencia operativa. Suprimir salidas de emergencia, estrechar pasadizos accesibles o descartar postulantes mediante algoritmos opacos para abaratar costos instrumentaliza a seres humanos vulnerables como objetos descartables.
+              Kant (1785/2012) establece que la persona debe ser tratada siempre como un fin en sí misma y jamás como un
+              mero medio. La dignidad ontológica es incondicional, inherente e inalienable a todo ser humano. En
+              contraste, la dignidad utilitaria reduce al individuo a su utilidad económica o eficiencia operativa.
+              Suprimir salidas de emergencia, estrechar pasadizos accesibles o descartar postulantes mediante algoritmos
+              opacos para abaratar costos instrumentaliza a seres humanos vulnerables como objetos descartables.
             </p>
           </div>
           <div class="academic-quote border-l-2 border-gold-600 pl-3">
-            <strong class="text-stone-900 font-semibold block mb-1">Los 4 Principios de la Bioética y DDHH (Beauchamp & Childress)</strong>
+            <strong class="text-stone-900 font-semibold block mb-1">Los 4 Principios de la Bioética y DDHH (Beauchamp &
+              Childress)</strong>
             <p class="academic-text text-stone-700">
-              La labor interdisciplinaria debe regirse por los principios bioéticos (Beauchamp & Childress, 2019): <em>no maleficencia</em> (prohibición estricta de generar daños físicos por barreras arquitectónicas o daños morales por sesgos de datos), <em>beneficencia</em> (deber activo de maximizar el bienestar del usuario), <em>autonomía</em> (garantizar movilidad y decisiones independientes) y <em>justicia distributiva</em> (equidad irrestricta de oportunidades). Los Derechos Humanos (ONU, 1948) representan el piso ético irrenunciable que ningún interés comercial puede subordinar.
+              La labor interdisciplinaria debe regirse por los principios bioéticos (Beauchamp & Childress, 2019):
+              <em>no maleficencia</em> (prohibición estricta de generar daños físicos por barreras arquitectónicas o
+              daños morales por sesgos de datos), <em>beneficencia</em> (deber activo de maximizar el bienestar del
+              usuario), <em>autonomía</em> (garantizar movilidad y decisiones independientes) y <em>justicia
+                distributiva</em> (equidad irrestricta de oportunidades). Los Derechos Humanos (ONU, 1948) representan
+              el piso ético irrenunciable que ningún interés comercial puede subordinar.
             </p>
           </div>
         </div>
@@ -566,25 +553,25 @@
 
       <!-- Declaración del Compromiso Ético del Equipo (AC2) -->
       <div class="p-4 bg-amber-50/80 rounded-lg border border-amber-200 text-stone-800 mb-6">
-          <h4 class="text-xs font-bold text-amber-900 uppercase tracking-wider mb-1 flex items-center gap-1.5">
-            <svg class="w-4 h-4 text-amber-700" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                clip-rule="evenodd" />
-            </svg>
-            Compromiso Deontológico del Equipo ante estas Vulnerabilidades
-          </h4>
-          <p class="academic-text text-xs sm:text-sm leading-relaxed text-stone-700 italic">
-            «Como equipo, entendemos que, al igual que en <em>Las Meninas</em> y en el trazo recursivo de
-            <em>Escher</em>, lo verdaderamente importante no siempre salta a la vista, sino en lo que organizamos detrás
-            del lienzo y del código. Nos comprometemos a trabajar con la honestidad y responsabilidad propias de la
-            <em>areté</em>, verificando que nuestros diseños de interiores integren el diseño universal y la seguridad
-            física para las personas con discapacidad y adultos mayores, y que los sistemas empresariales que
-            organicemos no oculten sesgos discriminatorios. La accesibilidad y la equidad deben formar parte de esa
-            estructura invisible desde el inicio, consagrando a la persona humana siempre como fin en sí mismo y jamás
-            como medio.»
-          </p>
-        </div>
+        <h4 class="text-xs font-bold text-amber-900 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-amber-700" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd" />
+          </svg>
+          Compromiso Deontológico del Equipo ante estas Vulnerabilidades
+        </h4>
+        <p class="academic-text text-xs sm:text-sm leading-relaxed text-stone-700 italic">
+          "Como equipo, entendemos que, al igual que en <em>Las Meninas</em> y en el trazo recursivo de
+          <em>Escher</em>, lo verdaderamente importante no siempre salta a la vista, sino en lo que organizamos detrás
+          del lienzo y del código. Nos comprometemos a trabajar con la honestidad y responsabilidad propias de la
+          <em>areté</em>, verificando que nuestros diseños de interiores integren el diseño universal y la seguridad
+          física para las personas con discapacidad y adultos mayores, y que los sistemas empresariales que
+          organicemos no oculten sesgos discriminatorios. La accesibilidad y la equidad deben formar parte de esa
+          estructura invisible desde el inicio, consagrando a la persona humana siempre como fin en sí mismo y jamás
+          como medio."
+        </p>
+      </div>
       </div>
     </section>
 
@@ -1058,60 +1045,52 @@
         <div class="h-px bg-stone-200 flex-1"></div>
       </div>
       <h2 class="text-2xl sm:text-3xl font-serif font-bold text-navy-800 mb-6">
-        Referencias Académicas y Fuentes Documentales (Norma APA 7.ª Edición)
+        Referencias
       </h2>
 
       <div
-        class="bg-white rounded-xl p-6 border border-stone-200 museum-card text-xs sm:text-sm text-stone-700 space-y-3 leading-relaxed">
-        <p class="pl-8 -indent-8">
-          Aristóteles. (2014). <em>Ética a Nicómaco</em> (J. Pallí Bonet, Trad.). Editorial Gredos. (Obra original
-          publicada ca. 349 a.C.).
+        class="bg-white rounded-xl p-6 sm:p-8 border border-stone-200 museum-card text-xs sm:text-sm text-stone-700 leading-relaxed max-w-5xl">
+        <p class="apa-reference">
+          Aristóteles. (2014). <em>Ética a Nicómaco</em> (J. Pallí Bonet, Trad.). Editorial Gredos. (Obra original publicada ca. 349 a.C.).
         </p>
-        <p class="pl-8 -indent-8">
-          Beauchamp, T. L., & Childress, J. F. (2019). <em>Principles of biomedical ethics</em> (8.ª ed.). Oxford
-          University Press.
+        <p class="apa-reference">
+          Beauchamp, T. L., & Childress, J. F. (2019). <em>Principles of biomedical ethics</em> (8.ª ed.). Oxford University Press.
         </p>
-        <p class="pl-8 -indent-8">
-          Escher, M. C. (1948). <em>Drawing hands</em> [Litografía]. Baarn, Países Bajos. Colección Fundación M. C.
-          Escher.
+        <p class="apa-reference">
+          Escher, M. C. (1948). <em>Drawing hands</em> [Litografía]. Baarn, Países Bajos. Colección Fundación M. C. Escher.
         </p>
-        <p class="pl-8 -indent-8">
+        <p class="apa-reference">
           Gaarder, J. (1991). <em>El mundo de Sofía: Novela sobre la historia de la filosofía</em>. Ediciones Siruela.
         </p>
-        <p class="pl-8 -indent-8">
+        <p class="apa-reference">
           Giusti, M. (2007). <em>El sentido de la ética</em>. Pontificia Universidad Católica del Perú, Fondo Editorial.
         </p>
-        <p class="pl-8 -indent-8">
-          Instituto Nacional de Estadística e Informática [INEI]. (2017). <em>Perfil sociodemográfico de la población
-            con discapacidad en el Perú: Censos Nacionales 2017</em>. INEI.
+        <p class="apa-reference">
+          Instituto Nacional de Estadística e Informática [INEI]. (2017). <em>Perfil sociodemográfico de la población con discapacidad en el Perú: Censos Nacionales 2017</em>. INEI.
         </p>
-        <p class="pl-8 -indent-8">
-          Instituto Nacional de Estadística e Informática [INEI]. (2023). <em>Situación de la población adulta mayor:
-            Informe técnico N° 4</em>. INEI.
+        <p class="apa-reference">
+          Instituto Nacional de Estadística e Informática [INEI]. (2023). <em>Situación de la población adulta mayor: Informe técnico N° 4</em>. INEI.
         </p>
-        <p class="pl-8 -indent-8">
-          Kant, I. (2012). <em>Fundamentación de la metafísica de las costumbres</em> (M. García Morente, Trad.).
-          Alianza Editorial. (Obra original publicada en 1785).
+        <p class="apa-reference">
+          Kant, I. (2012). <em>Fundamentación de la metafísica de las costumbres</em> (M. García Morente, Trad.). Alianza Editorial. (Obra original publicada en 1785).
         </p>
-        <p class="pl-8 -indent-8">
-          Organización de las Naciones Unidas [ONU]. (1948). <em>Declaración Universal de los Derechos Humanos</em>.
-          Asamblea General de las Naciones Unidas.
+        <p class="apa-reference">
+          Organización de las Naciones Unidas [ONU]. (1948). <em>Declaración Universal de los Derechos Humanos</em>. Asamblea General de las Naciones Unidas.
         </p>
-        <p class="pl-8 -indent-8">
-          Platón. (2003). <em>La República, Libro VII: Alegoría de la caverna</em> (C. Eggers Lan, Trad.). Editorial
-          Gredos.
+        <p class="apa-reference">
+          Platón. (2003). <em>La República, Libro VII: Alegoría de la caverna</em> (C. Eggers Lan, Trad.). Editorial Gredos.
         </p>
-        <p class="pl-8 -indent-8">
-          Radio Ambulante. (2020). <em>Caravana de la desinformación: Narrativas y posverdad</em> [Episodio de podcast].
-          NPR.
+        <p class="apa-reference">
+          Radio Ambulante. (2020). <em>Caravana de la desinformación: Narrativas y posverdad</em> [Episodio de podcast]. NPR.
         </p>
-        <p class="pl-8 -indent-8">
-          Scheler, M. (2001). <em>Ética: Nuevo ensayo de fundamentación de un personalismo ético</em> (H. Rodríguez
-          Sanz, Trad.). Caparrós Editores. (Obra original publicada en 1916).
+        <p class="apa-reference">
+          Scheler, M. (2001). <em>Ética: Nuevo ensayo de fundamentación de un personalismo ético</em> (H. Rodríguez Sanz, Trad.). Caparrós Editores. (Obra original publicada en 1916).
         </p>
-        <p class="pl-8 -indent-8">
+        <p class="apa-reference">
           Velázquez, D. (1656). <em>Las Meninas</em> [Óleo sobre lienzo]. Museo Nacional del Prado, Madrid, España.
-          https://www.museodelprado.es/coleccion/obra-de-arte/las-meninas/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+          <a href="https://www.museodelprado.es/coleccion/obra-de-arte/las-meninas/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+            target="_blank" rel="noopener noreferrer"
+            class="text-gold-600 hover:text-gold-700 underline break-all">https://www.museodelprado.es/coleccion/obra-de-arte/las-meninas/9fdc7800-9ade-48b0-ab8b-edee94ea877f</a>
         </p>
       </div>
     </section>
@@ -1124,7 +1103,7 @@
     <div class="bg-white rounded-xl max-w-lg w-full p-6 shadow-2xl border border-stone-200 transform transition-all">
       <div class="flex items-center justify-between pb-3 border-b border-stone-100 mb-4">
         <div>
-          <span class="text-[10px] uppercase font-bold tracking-widest text-gold-600">Inspección Deontológica</span>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-gold-600">Explicación Ética</span>
           <h4 id="modal-hotspot-title" class="text-xl font-serif font-bold text-stone-900 leading-tight">Título</h4>
           <p id="modal-hotspot-subtitle" class="text-xs text-stone-500">Subtítulo</p>
         </div>
@@ -1150,18 +1129,15 @@
   <footer class="bg-white border-t border-stone-200 py-10 mt-20">
     <div
       class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-stone-500">
-      <div class="flex items-center space-x-3">
-        <div class="w-8 h-8 rounded bg-navy-800 text-gold-500 font-cinzel font-bold flex items-center justify-center">
-          HP
-        </div>
+      <div class="flex items-center space-x-4">
+        <img src="assets/logo-ucsur.png" alt="Universidad Científica del Sur" class="h-10 sm:h-12 w-auto object-contain" />
         <div>
-          <p class="font-bold text-stone-800">Portafolio Digital «Huella Profesional»</p>
-          <p class="text-[11px]">Evaluación Continua 1 (EC1) · Universidad Científica del Sur · 2026-2</p>
+          <p class="font-bold text-stone-800 text-sm">Portafolio Digital "Huella Profesional"</p>
+          <p class="text-xs text-stone-500">Universidad Científica del Sur</p>
         </div>
       </div>
       <div class="text-center md:text-right text-[11px] leading-relaxed">
-        <p>Equipo “LO QUE SOMOS” · Arquitectura de Interiores & Ing. Empresarial y de Sistemas</p>
-        <p class="text-stone-400">Desarrollado para despliegue en Vercel y versionado en GitHub</p>
+        <p class="font-medium text-stone-700">Equipo “LO QUE SOMOS” · Arquitectura de Interiores & Ing. Empresarial y de Sistemas</p>
       </div>
     </div>
   </footer>

@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function initReadingProgress() {
   const progressBar = document.getElementById('reading-progress');
   if (!progressBar) return;
-  
+
   window.addEventListener('scroll', () => {
     const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
     const progress = totalHeight > 0 ? (window.scrollY / totalHeight) * 100 : 0;
@@ -57,7 +57,7 @@ function initWordCounter() {
 
   const wordBadge = document.getElementById('academic-word-count');
   const wordStatus = document.getElementById('academic-word-status');
-  
+
   if (wordBadge) {
     wordBadge.textContent = totalWords.toLocaleString();
     if (wordStatus) {
@@ -79,48 +79,48 @@ function initWordCounter() {
    3. Hotspots interactivos en las obras artísticas
    ========================================================================== */
 const hotspotData = {
-  // Las Meninas
+  // Las Meninas (Arquitectura de Interiores)
   'meninas-1': {
-    title: 'El Pintor y el Bastidor Oculto (La Areté)',
-    subtitle: 'Diego Velázquez ante el lienzo invertido',
-    text: 'Velázquez no se retrata contemplando una corte vacía, sino en plena ejecución reflexiva. El bastidor nos da la espalda: lo esencial de su maestría ocurre en esa estructura oculta que el espectador no ve. En arquitectura y sistemas, la verdadera excelencia (areté) no es el maquillaje superficial ni el diseño estético para la foto, sino la seguridad estructural, la accesibilidad de las rutas de escape y la solidez de los algoritmos invisibles que sostienen la vida humana cotidiana.'
+    title: '1. El bastidor oculto: La calidad que no se ve',
+    subtitle: 'La estructura sostiene todo lo que está a la vista',
+    text: 'El pintor trabaja frente a un gran bastidor que nos da la espalda. Esto nos enseña que lo más importante del trabajo profesional muchas veces no está a simple vista: en arquitectura de interiores, no se trata solo de que un lugar se vea bonito para una foto, sino de que su estructura sea sólida, sus rutas de evacuación sean seguras y los materiales protejan la vida de las personas.'
   },
   'meninas-2': {
-    title: 'El Espejo Central (El Telos: La Persona como Fin)',
-    subtitle: 'Los reyes reflejados como destinatarios últimos',
-    text: 'En el centro geométrico del fondo, un espejo refleja a quienes están fuera del cuadro. Esto invierte la mirada: el propósito final (telos) de toda obra profesional no es la complacencia del autor ni el beneficio mercantil inmediato, sino el ser humano que habita el espacio o interactúa con el sistema informático. Como postula Kant (1785), la persona debe ser tratada siempre como un fin supremo, jamás como un medio de lucro.'
+    title: '2. El espejo al fondo: Las personas son lo primero',
+    subtitle: 'El usuario siempre en el centro del diseño',
+    text: 'Al fondo de la habitación hay un espejo que refleja a quienes están mirando la escena. Esto nos recuerda que el objetivo final de cualquier proyecto no es el ego del profesional ni solo obtener ganancias, sino servir y cuidar el bienestar de las personas reales que van a habitar y usar ese espacio todos los días.'
   },
   'meninas-3': {
-    title: 'El Espacio Habitado y la Iluminación',
-    subtitle: 'La Infanta y el séquito: el confort y la convivencia',
-    text: 'La composición genera una atmósfera habitable donde conviven diferentes corporalidades y estaturas. En la arquitectura de interiores, esto simboliza el mandato ético del diseño universal: proyectar ambientes con ventilación adecuada, ergonomía sensible y accesibilidad irrestricta que permitan el florecimiento humano (eudaimonía), sin excluir a personas con movilidad reducida o adultos mayores.'
+    title: '3. El espacio compartido: Inclusión y accesibilidad',
+    subtitle: 'Ambientes pensados para todas las personas',
+    text: 'En la pintura conviven niños, adultos y personas con distintas características físicas. En la práctica profesional, esto simboliza la necesidad de crear espacios cómodos, bien iluminados y libres de obstáculos, donde personas con discapacidad, niños y adultos mayores puedan desplazarse con total libertad y seguridad.'
   },
   'meninas-4': {
-    title: 'La Puerta Abierta hacia la Sociedad',
-    subtitle: 'José Nieto en el vano iluminado',
-    text: 'Al fondo a la derecha, una figura cruza el umbral entre el espacio privado y la luz pública. Representa la conexión ineludible con la realidad peruana: el ejercicio profesional no opera en un vacío aséptico de oficina o estudio, sino en un país atravesado por desigualdades y precariedad donde cada decisión técnica tiene impacto público y social.'
+    title: '4. La puerta abierta: Compromiso con nuestra sociedad',
+    subtitle: 'La profesión conectada con la realidad del país',
+    text: 'Al fondo, una puerta abierta deja entrar la luz del exterior. Nos recuerda que un profesional no trabaja aislado en una oficina, sino dentro de la realidad de nuestro país. Cada plano o diseño debe tomar en cuenta las necesidades de la comunidad y aportar a mejorar la vida de los peruanos.'
   },
 
-  // Manos Dibujando (M. C. Escher)
+  // Manos Dibujando (Ingeniería Empresarial y de Sistemas)
   'escher-1': {
-    title: 'La Mano que Modela el Algoritmo',
-    subtitle: 'El ingeniero como arquitecto de reglas invisibles',
-    text: 'La mano izquierda sostiene la pluma y da relieve a la manga derecha. En la ingeniería empresarial y de sistemas, cada línea de código, arquitectura de datos y regla de decisión es trazada por un criterio humano. No existe la «neutralidad algorítmica»: el sistema automatizado hereda la visión, los valores o los sesgos de su programador.'
+    title: '1. La mano que dibuja: La responsabilidad de quien programa',
+    subtitle: 'Detrás de cada sistema hay una decisión humana',
+    text: 'Una mano traza y da forma a la otra. En ingeniería de sistemas, cada línea de código y cada regla dentro de un software es decidida por una persona. La tecnología no es mágica ni neutral: siempre refleja los valores, el cuidado o los descuidos de quien la programa.'
   },
   'escher-2': {
-    title: 'El Bucle de Retroalimentación Social',
-    subtitle: 'La recursividad: el sistema actúa sobre la sociedad',
-    text: 'A su vez, la mano derecha dibuja el puño de la mano izquierda, cerrando una paradoja de causalidad circular. Cuando un algoritmo de selección laboral o scoring crediticio se implementa en empresas peruanas, las decisiones automatizadas modifican las oportunidades reales de miles de postulantes, reforzando o corrigiendo las desigualdades históricas del país.'
+    title: '2. El impacto social: La tecnología cambia vidas',
+    subtitle: 'Las decisiones de un sistema afectan a las personas',
+    text: 'La segunda mano dibuja a la primera, formando un ciclo donde ambas se influyen. Cuando un sistema se implementa en empresas, bancos o entidades públicas, sus decisiones automáticas afectan directamente si una persona consigue un empleo, un crédito o una atención oportuna.'
   },
   'escher-3': {
-    title: 'El Papel Plano y los Datos de Entrenamiento',
-    subtitle: 'La ilusión de objetividad en la superficie bidimensional',
-    text: 'Ambas manos emergen de una hoja de papel sujeta con chinchetas. El papel representa la base de datos histórica. Si los datos reflejan siglos de discriminación de género, etnia o procedencia regional, el algoritmo simplemente optimizará y amplificará la injusticia bajo un falso ropaje de objetividad matemática (apelación a la autoridad del algoritmo).'
+    title: '3. La base de datos: Cuidar que no haya prejuicios',
+    subtitle: 'La información del pasado puede repetir errores',
+    text: 'Ambas manos nacen de la misma hoja de papel. El papel representa los datos con los que entrenamos a los sistemas. Si esa información histórica contiene errores o discriminación, el sistema aprenderá y repetirá esas mismas fallas si no lo corregimos a tiempo.'
   },
   'escher-4': {
-    title: 'El Imperativo de la Auditoría Humana',
-    subtitle: 'Romper el ciclo mediante la responsabilidad ética',
-    text: 'Escher nos obliga a observar la trampa del bucle infinito. La ética deontológica en sistemas exige que siempre exista supervisión humana (human-in-the-loop). Ninguna decisión que comprometa el sustento, la dignidad o los derechos de una persona puede delegarse ciegamente a una «caja negra» tecnológica sin explicabilidad y auditoría periódica.'
+    title: '4. La supervisión humana: No dejar todo en manos de máquinas',
+    subtitle: 'El profesional siempre debe revisar y responder',
+    text: 'El dibujo muestra un ciclo infinito que solo se entiende cuando lo miramos desde fuera. En tecnología, ninguna decisión importante que afecte los derechos o la dignidad de una persona debe dejarse a ciegas a una máquina; siempre debe haber un profesional responsable revisando y garantizando un trato justo.'
   }
 };
 
@@ -221,7 +221,7 @@ function initFacesMapInteractions() {
             <span>${data.icon}</span>
             <span>${data.tag}</span>
           </span>
-          <span class="text-[10px] text-stone-400 font-mono font-semibold">Ficha Oficial AC2</span>
+          <span class="text-[10px] text-stone-400 font-mono font-semibold"></span>
         </div>
 
         <h4 class="text-xl font-bold font-serif-title text-stone-900 mb-3 leading-snug">
@@ -311,35 +311,8 @@ function initFacesMapInteractions() {
    5. Pirámide interactiva de Max Scheler
    ========================================================================== */
 const schelerData = {
-  'tier-espirituales': {
-    name: '1. Valores Espirituales (La Cúspide Ética)',
-    rank: 'Rango superior: Lo justo, lo bello, lo verdadero.',
-    desc: 'Trascienden las necesidades biológicas y la mera utilidad material. Representan la rectitud intelectiva, la honestidad desinteresada y la justicia en el trato humano.',
-    presence: 'Parcial (en disputa con la urgencia económica)',
-    exampleArq: 'En Arquitectura de Interiores: Defender la verdad en la memoria descriptiva de materiales, negándose a utilizar sustitutos inflamables que el cliente no percibe a simple vista pero comprometen la vida.',
-    exampleSys: 'En Ingeniería de Sistemas: Diseñar arquitecturas de software transparentes y negarse a manipular reportes analíticos de métricas o retención para inflar valoraciones corporativas falsas.',
-    quote: '«Los valores espirituales no se subordinan al éxito instrumental; sostienen la dignidad misma de la conciencia profesional.» (Scheler, 1916).'
-  },
-  'tier-vitales': {
-    name: '2. Valores Vitales (La Vida y la Seguridad)',
-    rank: 'Rango vital: Lo noble vs. lo vulgar; lo sano vs. lo enfermo.',
-    desc: 'Vinculados a la preservación de la vida orgánica, la integridad psicofísica, la salud comunitaria y el bienestar colectivo duradero.',
-    presence: 'Parcial (reconocidos en la teoría, pero vulnerados en la informalidad peruana)',
-    exampleArq: 'Garantizar ventilación cruzada, iluminación natural bioclimática, evacuación segura contra incendios y ergonomía postural que evite lesiones crónicas en los trabajadores.',
-    exampleSys: 'Garantizar la protección de la salud mental de los operadores frente a interfaces adictivas o ritmos algorítmicos extenuantes, y asegurar sistemas críticos hospitalarios.',
-    quote: '«La subordinación de la vida al lucro monetario constituye la principal patología moral de las organizaciones modernas.»'
-  },
-  'tier-economicos': {
-    name: '3. Valores Económicos y de lo Útil',
-    rank: 'Rango instrumental: Lo rentable, lo eficiente, lo productivo.',
-    desc: 'Valores indispensables para la viabilidad de cualquier empresa o proyecto, pero subordinados ontológicamente a los valores vitales y espirituales. Son medios, no fines.',
-    presence: 'Sí (Ampliamente hegemónicos en el mercado peruano)',
-    exampleArq: 'Optimización de presupuestos, reducción de desperdicios en obra, retorno sobre la inversión en locales comerciales y costos de mantenimiento a largo plazo.',
-    exampleSys: 'Eficiencia computacional, escalabilidad en la nube, reducción de costos operativos y maximización de conversiones en plataformas de comercio electrónico.',
-    quote: '«Lo útil adquiere valor solo cuando está al servicio de un bien superior; desligado de la ética, se convierte en mera explotación.»'
-  },
   'tier-agradable': {
-    name: '4. Valores de lo Agradable y Sensorial',
+    name: '1. Valores de lo Agradable o Sensorial',
     rank: 'Rango sensible: Lo placentero vs. lo desagradable.',
     desc: 'Asociados a la satisfacción sensorial inmediata, el confort de primer nivel y las respuestas afectivas placenteras del usuario.',
     presence: 'Sí (Frecuente en el diseño estético comercial y UX)',
@@ -347,8 +320,35 @@ const schelerData = {
     exampleSys: 'Microinteracciones fluidas en interfaces móviles, navegación intuitiva, gratificación visual en dashboards interactivos y confort visual en modo oscuro.',
     quote: '«El agrado es fugaz y subjetivo; una sociedad que confunde el placer sensorial con la excelencia moral degrada su propia cultura.»'
   },
+  'tier-economicos': {
+    name: '2. Valores Económicos y de lo Útil',
+    rank: 'Rango instrumental: Lo rentable, lo eficiente, lo productivo.',
+    desc: 'Valores indispensables para la viabilidad de cualquier empresa o proyecto, pero subordinados ontológicamente a los valores vitales y espirituales. Son medios, no fines.',
+    presence: 'Sí (Ampliamente hegemónicos en el mercado peruano)',
+    exampleArq: 'Optimización de presupuestos, reducción de desperdicios en obra, retorno sobre la inversión en locales comerciales y costos de mantenimiento a largo plazo.',
+    exampleSys: 'Eficiencia computacional, escalabilidad en la nube, reducción de costos operativos y maximización de conversiones en plataformas de comercio electrónico.',
+    quote: '«Lo útil adquiere valor solo cuando está al servicio de un bien superior; desligado de la ética, se convierte en mera explotación.»'
+  },
+  'tier-vitales': {
+    name: '3. Valores Vitales',
+    rank: 'Rango vital: Lo noble vs. lo vulgar; lo sano vs. lo enfermo.',
+    desc: 'Vinculados a la preservación de la vida orgánica, la integridad psicofísica, la salud comunitaria y el bienestar colectivo duradero.',
+    presence: 'Parcial (reconocidos en la teoría, pero vulnerados en la informalidad peruana)',
+    exampleArq: 'Garantizar ventilación cruzada, iluminación natural bioclimática, evacuación segura contra incendios y ergonomía postural que evite lesiones crónicas en los trabajadores.',
+    exampleSys: 'Garantizar la protección de la salud mental de los operadores frente a interfaces adictivas o ritmos algorítmicos extenuantes, y asegurar sistemas críticos hospitalarios.',
+    quote: '«La subordinación de la vida al lucro monetario constituye la principal patología moral de las organizaciones modernas.»'
+  },
+  'tier-espirituales': {
+    name: '4. Valores Espirituales',
+    rank: 'Rango superior: Lo justo, lo bello, lo verdadero.',
+    desc: 'Trascienden las necesidades biológicas y la mera utilidad material. Representan la rectitud intelectiva, la honestidad desinteresada y la justicia en el trato humano.',
+    presence: 'Parcial (en disputa con la urgencia económica)',
+    exampleArq: 'En Arquitectura de Interiores: Defender la verdad en la memoria descriptiva de materiales, negándose a utilizar sustitutos inflamables que el cliente no percibe a simple vista pero comprometen la vida.',
+    exampleSys: 'En Ingeniería de Sistemas: Diseñar arquitecturas de software transparentes y negarse a manipular reportes analíticos de métricas o retención para inflar valoraciones corporativas falsas.',
+    quote: '«Los valores espirituales no se subordinan al éxito instrumental; sostienen la dignidad misma de la conciencia profesional.» (Scheler, 1916).'
+  },
   'tier-sagrado': {
-    name: '5. Valores de lo Sagrado (La Trascendencia)',
+    name: '5. Valores de lo Sagrado',
     rank: 'Rango absoluto: Lo santo vs. lo profano.',
     desc: 'Constituyen el rango supremo en la metafísica de Scheler. Aunque en la profesión técnica secular no se opere directamente con lo religioso, conecta con el carácter sagrado e inviolable de la dignidad de cada ser humano.',
     presence: 'No directo (Presente como reverencia incondicional hacia la persona humana)',
@@ -493,7 +493,7 @@ function initPresentationMode() {
    ========================================================================== */
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
       const targetId = this.getAttribute('href');
       if (targetId === '#') return;
       const target = document.querySelector(targetId);

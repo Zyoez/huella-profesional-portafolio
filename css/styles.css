@@ -153,3 +153,21 @@ body.presentation-mode .key-stat {
   font-weight: 700;
   color: #0F2A4A;
 }
+
+/* ==========================================================================
+   Formato Estándar APA 7: Sangría Francesa (Hanging Indent)
+   ========================================================================== */
+.apa-reference {
+  padding-left: 2.5rem !important;
+  text-indent: -2.5rem !important;
+  margin-bottom: 1.15rem !important;
+  line-height: 1.75 !important;
+  text-align: left !important;
+  color: #374151;
+}
+
+.apa-reference a {
+  display: inline !important;
+  word-break: break-all !important;
+  overflow-wrap: anywhere !important;
+}
