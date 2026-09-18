@@ -107,68 +107,68 @@ const hotspotData = {
   // Las Meninas (Interdisciplinario: Arquitectura de Interiores & Ing. Empresarial y de Sistemas)
   'meninas-1': {
     title: '1. El bastidor oculto: Calidad técnica e infraestructura invisible',
-    subtitle: 'La estructura portante y el backend que sostienen todo lo que está a la vista',
+    subtitle: '',
     text: `
-      <p class="mb-2 text-stone-700">El pintor trabaja detrás de un imponente bastidor de espaldas al espectador. Esto nos enseña que lo verdaderamente crucial de la praxis profesional radica en el rigor técnico que no salta a simple vista:</p>
+      <p class="mb-2 text-stone-700">El pintor trabaja detrás de un imponente bastidor de espaldas al espectador. Esto nos recuerda que lo más importante está en lo que no se ve a simple vista:</p>
       <div class="space-y-2">
         <div class="bg-amber-50/80 p-3 rounded-lg border border-amber-200">
           <strong class="text-amber-900 font-bold block text-xs mb-1">🏛️ Arquitectura de Interiores:</strong>
-          <p class="text-stone-700 text-xs leading-relaxed">No se trata solo de crear ambientes estéticamente atractivos para una fotografía o render, sino de garantizar cálculos estructurales rigurosos, ductos de ventilación, aislamiento ignífugo y vías de escape seguras que salvaguardan la vida ante cualquier emergencia.</p>
+          <p class="text-stone-700 text-xs leading-relaxed">No basta con que un espacio se vea bonito; lo principal es que sea seguro, esté bien construido y cuide la vida de quienes lo usan.</p>
         </div>
         <div class="bg-sky-50/80 p-3 rounded-lg border border-sky-200">
           <strong class="text-sky-900 font-bold block text-xs mb-1">💻 Ingeniería Empresarial y de Sistemas:</strong>
-          <p class="text-stone-700 text-xs leading-relaxed">Representa la arquitectura de software oculta, el diseño de bases de datos normalizadas, la seguridad perimetral y el backend. Si el código interno es frágil o descuidado, toda la interfaz corporativa colapsa vulnerando la seguridad y datos de los usuarios.</p>
+          <p class="text-stone-700 text-xs leading-relaxed">La estructura interna del software debe ser firme y confiable para evitar fallas y proteger siempre los datos de las personas.</p>
         </div>
       </div>
     `
   },
   'meninas-2': {
     title: '2. El espejo al fondo: Las personas y usuarios en el centro',
-    subtitle: 'Diseñar para el ser humano y el bien común, jamás para el ego personal',
+    subtitle: '',
     text: `
-      <p class="mb-2 text-stone-700">Al fondo de la habitación, un espejo refleja a los reyes que contemplan la escena, situando el propósito de la obra fuera de ella, en los observadores:</p>
+      <p class="mb-2 text-stone-700">El espejo al fondo refleja a quienes observan la escena, recordándonos que el centro de todo proyecto siempre son las personas:</p>
       <div class="space-y-2">
         <div class="bg-amber-50/80 p-3 rounded-lg border border-amber-200">
           <strong class="text-amber-900 font-bold block text-xs mb-1">🏛️ Arquitectura de Interiores:</strong>
-          <p class="text-stone-700 text-xs leading-relaxed">Recuerda que el hábitat espacial no se concibe para la vanidad del proyectista ni para el ahorro negligente de costos, sino para brindar dignidad, confort térmico, salud física y bienestar psicosocial a las personas que lo habitarán diariamente.</p>
+          <p class="text-stone-700 text-xs leading-relaxed">Un espacio no se diseña para el gusto personal de quien lo crea, sino para brindar comodidad, salud y bienestar diario a quienes van a vivirlo.</p>
         </div>
         <div class="bg-sky-50/80 p-3 rounded-lg border border-sky-200">
           <strong class="text-sky-900 font-bold block text-xs mb-1">💻 Ingeniería Empresarial y de Sistemas:</strong>
-          <p class="text-stone-700 text-xs leading-relaxed">Materializa el diseño centrado en el usuario (UX/Human-Centered Design) y la ética kantiana: los sistemas y flujos de automatización deben facilitar la vida laboral y ciudadana, reconociendo a la persona como fin supremo y nunca como mero recurso descartable.</p>
+          <p class="text-stone-700 text-xs leading-relaxed">La tecnología y los sistemas deben facilitar el trabajo y la vida diaria, tratando siempre al usuario con respeto y como la prioridad principal.</p>
         </div>
       </div>
     `
   },
   'meninas-3': {
     title: '3. El espacio compartido: Inclusión, accesibilidad universal y equidad',
-    subtitle: 'Espacios físicos y plataformas digitales libres de barreras y discriminación',
+    subtitle: '',
     text: `
-      <p class="mb-2 text-stone-700">En el salón conviven armónicamente personajes con diversas características físicas, estaturas y edades en una atmósfera unificada:</p>
+      <p class="mb-2 text-stone-700">En el salón conviven personas de distintas edades y características, lo que nos enseña el valor de la inclusión y la igualdad:</p>
       <div class="space-y-2">
         <div class="bg-amber-50/80 p-3 rounded-lg border border-amber-200">
           <strong class="text-amber-900 font-bold block text-xs mb-1">🏛️ Arquitectura de Interiores:</strong>
-          <p class="text-stone-700 text-xs leading-relaxed">Representa el principio de diseño universal: suprimir desniveles innecesarios, incluir rampas normadas, señalética comprensible y pasajes accesibles para personas con discapacidad motriz, niños y adultos mayores.</p>
+          <p class="text-stone-700 text-xs leading-relaxed">Los espacios deben ser accesibles para todos, eliminando barreras y facilitando el paso seguro de niños, adultos mayores y personas con discapacidad.</p>
         </div>
         <div class="bg-sky-50/80 p-3 rounded-lg border border-sky-200">
           <strong class="text-sky-900 font-bold block text-xs mb-1">💻 Ingeniería Empresarial y de Sistemas:</strong>
-          <p class="text-stone-700 text-xs leading-relaxed">Encarna la accesibilidad digital (estándares WCAG) y la equidad algorítmica: garantizar que los modelos de software empresarial no contengan sesgos que discriminen a postulantes o clientes por su edad, condición o procedencia.</p>
+          <p class="text-stone-700 text-xs leading-relaxed">Las plataformas y aplicaciones deben ser fáciles de usar para cualquier persona y funcionar con justicia, sin discriminar a nadie.</p>
         </div>
       </div>
     `
   },
   'meninas-4': {
     title: '4. La puerta abierta: Transparencia y conexión con la sociedad',
-    subtitle: 'El deber ético de conectar nuestras disciplinas con el entorno y la realidad nacional',
+    subtitle: '',
     text: `
-      <p class="mb-2 text-stone-700">Al fondo, una puerta iluminada conecta la estancia palaciega con el exterior a través de una figura que contempla ambos mundos:</p>
+      <p class="mb-2 text-stone-700">La puerta abierta y luminosa conecta el interior con el exterior, recordándonos nuestro compromiso con la comunidad:</p>
       <div class="space-y-2">
         <div class="bg-amber-50/80 p-3 rounded-lg border border-amber-200">
           <strong class="text-amber-900 font-bold block text-xs mb-1">🏛️ Arquitectura de Interiores:</strong>
-          <p class="text-stone-700 text-xs leading-relaxed">Exige que el diseño interior no sea una burbuja aislada: debe responder al contexto urbano, respetar la sostenibilidad bioclimática del entorno peruano y contribuir activamente a mejorar la calidad de vida barrial.</p>
+          <p class="text-stone-700 text-xs leading-relaxed">El diseño de un espacio no debe aislarse; debe respetar su entorno, cuidar el medio ambiente y aportar de manera positiva a la comunidad.</p>
         </div>
         <div class="bg-sky-50/80 p-3 rounded-lg border border-sky-200">
           <strong class="text-sky-900 font-bold block text-xs mb-1">💻 Ingeniería Empresarial y de Sistemas:</strong>
-          <p class="text-stone-700 text-xs leading-relaxed">Simboliza la transparencia técnica, la auditoría algorítmica y la rendición de cuentas pública. Un ingeniero no debe escudarse en el «secreto corporativo» o la «caja negra» para ocultar fallas que afecten a los ciudadanos.</p>
+          <p class="text-stone-700 text-xs leading-relaxed">El trabajo tecnológico debe ser transparente y honesto. Nunca se deben ocultar errores o fallas que puedan perjudicar a las personas.</p>
         </div>
       </div>
     `
@@ -191,7 +191,13 @@ function initArtworkHotspots() {
       const data = hotspotData[id];
       if (data) {
         modalTitle.textContent = data.title;
-        modalSubtitle.textContent = data.subtitle;
+        if (data.subtitle && data.subtitle.trim() !== '') {
+          modalSubtitle.textContent = data.subtitle;
+          modalSubtitle.classList.remove('hidden');
+        } else {
+          modalSubtitle.textContent = '';
+          modalSubtitle.classList.add('hidden');
+        }
         modalText.innerHTML = data.text;
         modal.classList.remove('hidden');
         modal.classList.add('flex');
@@ -224,33 +230,33 @@ const populationInfo = {
     badgeClass: 'bg-amber-100 text-amber-900 border-amber-300',
     icon: '♿',
     title: '1. Personas con discapacidad en espacios públicos, comerciales o residenciales',
-    whyVulnerable: 'Son vulnerables porque muchas veces se prioriza la estética o reducir costos antes que la accesibilidad. En el Perú, cuando no se cumplen las normas de diseño universal, se generan barreras arquitectónicas y sensoriales en espacios comerciales, corporativos y residenciales, lo que limita su movilidad y autonomía.',
+    whyVulnerable: 'Muchas veces se prioriza la estética o reducir costos antes que la accesibilidad. Al no aplicar normas de diseño universal, se generan obstáculos en tiendas, oficinas o viviendas que limitan su movilidad e independencia.',
     bioethicsPrinciple: 'Justicia y autonomía',
-    bioethicsDetail: 'La justicia implica garantizar que todas las personas tengan un acceso equitativo a los espacios, sin que su discapacidad sea una barrera. La autonomía se relaciona con diseñar espacios que les permitan movilizarse y realizar sus actividades de manera segura e independiente, sin depender de otras personas.',
-    statEvidence: 'En el Perú, más de 3.1 millones de personas viven con alguna limitación permanente (INEI). En galerías y centros comerciales informales de Lima, las vías de evacuación y servicios carecen de accesibilidad podotáctil y rampas normalizadas.',
-    ethicalAction: 'Incorporar el diseño universal y la seguridad desde el anteproyecto preliminar, sustentar ante el cliente por qué ciertos materiales y anchos de circulación no son negociables, y dejar constancia escrita de las observaciones técnicas.'
+    bioethicsDetail: 'La justicia exige un acceso libre de barreras para todos; la autonomía busca que las personas puedan trasladarse y realizar sus actividades de manera segura e independiente.',
+    statEvidence: 'En el Perú, más de 3.1 millones de personas viven con alguna limitación permanente (INEI). En muchos comercios y galerías faltan rampas reglamentarias y vías seguras de evacuación.',
+    ethicalAction: 'Diseñar con accesibilidad desde el inicio, sustentar que la seguridad y el ancho de paso no son negociables, y dejar constancia escrita de las observaciones técnicas.'
   },
   'pop-adultos': {
     tag: 'Diseño Gerontológico & Hábitat Residencial',
     badgeClass: 'bg-blue-100 text-blue-900 border-blue-300',
     icon: '👴',
     title: '2. Personas adultas mayores en viviendas y espacios públicos o comerciales',
-    whyVulnerable: 'En el Perú, gran parte del parque inmobiliario y de los espacios públicos no contempla el diseño para el envejecimiento (rampas, iluminación adecuada, mobiliario ergonómico, señalética clara). Esto aumenta el riesgo de caídas, aislamiento y dependencia de terceros para realizar actividades cotidianas.',
+    whyVulnerable: 'Gran parte de las viviendas y espacios públicos no están adaptados al envejecimiento (falta de rampas, buena iluminación y pisos seguros), lo que aumenta el peligro de caídas y la pérdida de autonomía.',
     bioethicsPrinciple: 'Beneficencia y no maleficencia',
-    bioethicsDetail: 'El diseño de interiores tiene el deber de promover el bienestar de las personas mayores (beneficencia) y de evitar que un espacio mal planificado se convierta en una fuente de daño físico, accidentes graves o de exclusión social (no maleficencia).',
-    statEvidence: 'En el Perú, más del 13% de la población es adulta mayor (INEI). El 67% de los traumatismos graves por caídas en personas mayores se producen dentro del propio domicilio por desniveles, mala iluminación o pisos resbaladizos.',
-    ethicalAction: 'Aplicar criterios de arquitectura del envejecimiento: supresión de umbrales, instalación de barras de sujeción ergonómicas con diseño digno, iluminación difusa no deslumbrante y pisos con coeficiente antideslizante certificado.'
+    bioethicsDetail: 'El diseño debe promover activamente su bienestar (beneficencia) y evitar que un espacio mal planificado cause accidentes graves o aislamiento físico (no maleficencia).',
+    statEvidence: 'En el Perú, más del 13% de la población es adulta mayor (INEI). La gran mayoría de caídas graves ocurren dentro del propio domicilio por desniveles, mala iluminación o pisos resbaladizos.',
+    ethicalAction: 'Diseñar sin desniveles peligrosos, colocar barras de apoyo seguras, garantizar iluminación clara no deslumbrante y utilizar pisos antideslizantes certificados.'
   },
   'pop-algoritmos': {
     tag: 'Ingeniería Empresarial y de Sistemas & Ética de Datos',
     badgeClass: 'bg-emerald-100 text-emerald-900 border-emerald-300',
     icon: '💻',
     title: '3. Postulantes y trabajadores evaluados por sistemas empresariales automatizados',
-    whyVulnerable: 'Estos sistemas suelen entrenarse con datos históricos que ya contienen sesgos de género, edad o procedencia. Si una empresa peruana automatiza procesos sin auditar sus datos, corre el riesgo de excluir injustamente a personas calificadas, como ocurrió con algoritmos de contratación que penalizaban currículums de mujeres o egresados de provincia.',
+    whyVulnerable: 'Los sistemas automatizados pueden entrenarse con datos históricos con sesgos de género, edad o procedencia, descartando injustamente a postulantes calificados sin una debida supervisión.',
     bioethicsPrinciple: 'No maleficencia y justicia',
-    bioethicsDetail: 'Quien diseña o administra estos sistemas debe evitar que causen un daño no intencional (no maleficencia) y garantizar que las decisiones automatizadas distribuyan las oportunidades de manera equitativa, reconociendo a cada persona como fin y no como dato útil (justicia y dignidad ontológica kantiana).',
-    statEvidence: 'El uso de software ATS (Applicant Tracking Systems) y scoring automatizado creció más de un 120% en el sector corporativo peruano; sin embargo, menos del 4% de empresas audita la representatividad y equidad de sus bases de datos.',
-    ethicalAction: 'Auditar periódicamente los datos y resultados de los sistemas, documentar los criterios de decisión en un lenguaje que el área usuaria entienda, exigir revisión humana obligatoria (human-in-the-loop) y capacitar al equipo en sesgos algorítmicos.'
+    bioethicsDetail: 'Se debe evitar generar perjuicios injustos (no maleficencia) y garantizar oportunidades equitativas, tratando a cada postulante como persona y no como un simple dato (justicia y dignidad kantiana).',
+    statEvidence: 'En el Perú, el uso de sistemas automatizados de selección creció más de un 120% en empresas (MTPE, 2023); sin embargo, muy pocas auditan la equidad real de sus modelos y bases de datos.',
+    ethicalAction: 'Auditar periódicamente los algoritmos, documentar con claridad los criterios de decisión y exigir siempre una revisión humana antes de definir un resultado final.'
   }
 };
 
@@ -302,14 +308,19 @@ function initFacesMapInteractions() {
           </div>
 
           <!-- Datos de contexto real peruano -->
-          <div class="p-3 bg-stone-100/80 rounded-lg text-xs text-stone-600 border border-stone-200">
-            <span class="font-bold text-stone-800">Evidencia cuantitativa (Perú):</span> ${data.statEvidence}
+          <div class="p-3.5 bg-stone-100/80 rounded-lg border border-stone-200">
+            <strong class="text-stone-900 font-bold block mb-1 flex items-center gap-1.5 text-xs uppercase tracking-wider">
+              <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+              Evidencia cuantitativa:
+            </strong>
+            <p class="text-stone-700">${data.statEvidence}</p>
           </div>
 
           <!-- Acciones Positivas del Profesional -->
-          <div class="p-3 bg-emerald-50/80 rounded-lg border border-emerald-200 text-xs">
-            <strong class="text-emerald-950 font-bold block mb-1 uppercase tracking-wider">
-              Acción Positiva Deontológica:
+          <div class="p-3.5 bg-emerald-50/80 rounded-lg border border-emerald-200 text-xs">
+            <strong class="text-emerald-950 font-bold block mb-1 flex items-center gap-1.5 text-xs uppercase tracking-wider">
+              <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+              Acción positiva deontológica:
             </strong>
             <p class="text-emerald-900 font-medium">${data.ethicalAction}</p>
           </div>
