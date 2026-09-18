@@ -27,18 +27,18 @@ El proyecto unifica la perspectiva de **Arquitectura de Interiores** y de **Inge
 | Sección | Componente | Descripción e Interacciones | Marco Teórico Clave |
 |---|---|---|---|
 | **1. Portada Visual** | Hero Editorial | Título «Huella Profesional», frase de acompañamiento, badges de carrera y datos del equipo. | Pregunta eje del Módulo 1 y posicionamiento ético. |
-| **2. Propósito Profesional** | Dos Metáforas Artísticas | Visor con **Hotspots interactivos** en *Las Meninas* (Velázquez, 1656) y *Manos Dibujando* (M.C. Escher, 1948). | Aristóteles (*areté, telos, eudaimonía*) y Giusti (2007). |
+| **2. Propósito Profesional** | Metáfora Artística Interdisciplinaria | Visor con **Hotspots interactivos** en *Las Meninas* (Velázquez, 1656) vinculado interdisciplinariamente tanto a Arquitectura de Interiores como a Ingeniería de Sistemas. | Aristóteles (*areté, telos, eudaimonía*) y Giusti (2007). |
 | **3. Población Vulnerable** | Mapa Geográfico Interactivo | Mapa vectorial SVG del Perú con 3 marcadores interactivos (Lima y regiones), estadísticas reales (INEI, CONADIS) y collage de rostros. | Kant (*persona como fin, dignidad ontológica*), Beauchamp & Childress (*bioética*) y DDHH. |
 | **4. Jerarquía de Valores** | Pirámide de Max Scheler | Pirámide interactiva por estratos (espirituales, vitales, económicos, agradable, sagrado), análisis de la tensión axiológica (vitales vs económicos) y posición del equipo. | Max Scheler (1916), Gaarder (1991), Universalismo vs. Relativismo moral. |
-| **5. Mapa Crítico Profesional** | Luces y Sombras | Matriz dialéctica interactiva entre 3 negligencias (falacias y posverdad) y 3 acciones positivas, pregunta socrática y cierre integrador. | Falacias profesionales, Posverdad (Radio Ambulante) y Mito de la Caverna (Platón). |
+| **5. Mapa Crítico Profesional** | Infografía: Mapa de Negligencias y Acciones Positivas | Matriz editorial interactiva plasmada tal cual la infografía de síntesis (Situación, Negligencia ⚠️, Falacia 🧠, Población Afectada 👥 y Acciones Positivas 🍃), visor en alta definición con lightbox, balanza deontológica, pregunta socrática y cierre integrador. | Falacias profesionales (naturalista, ad verecundiam), Posverdad (Radio Ambulante) y Mito de la Caverna (Platón). |
 | **6. Referencias APA** | Bibliografía APA 7.ª ed. | Citas formales en sangría francesa de todas las obras y fuentes de los cuatro aprendizajes colaborativos. | Criterio de rigor documental APA 7.ª edición. |
 
 ---
 
 ## 📊 Verificación de Rúbrica: Extensión y Recursos
 
-* **Extensión de palabras:** **1,317 palabras académicas marcadas** (cumple estrictamente el rango solicitado de **1,200 a 1,500 palabras**). Cuenta con un contador dinámico en tiempo real en la barra de navegación superior.
-* **Recursos visuales e interactivos:** Más de 6 componentes interactivos originales (Lienzo interactivo con hotspots de Velázquez, lienzo de Escher, mapa cartográfico vectorial SVG del Perú, pirámide axiológica por niveles, conmutador de Luces/Sombras y modo de sustentación oral de 10 minutos).
+* **Extensión de palabras:** **1,287 palabras académicas marcadas** (cumple estrictamente el rango solicitado de **1,200 a 1,500 palabras**). Cuenta con un contador dinámico en tiempo real en la barra de navegación superior.
+* **Recursos visuales e interactivos:** Más de 6 componentes interactivos originales (Lienzo interactivo con hotspots de Velázquez con vinculación interdisciplinaria a ambas carreras, mapa cartográfico vectorial SVG del Perú, pirámide axiológica por niveles, matriz infográfica interactiva modelada con visor lightbox de lámina original y modo de sustentación oral de 10 minutos).
 
 ---
 

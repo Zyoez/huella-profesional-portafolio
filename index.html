@@ -63,7 +63,7 @@
           <span class="nav-indicator absolute bottom-0 left-0 w-0 h-[3px] bg-gold-500 rounded-full transition-all duration-300"></span>
         </a>
         <a href="#metaforas" class="nav-item relative py-2 transition text-stone-600 hover:text-gold-600">
-          Metáforas
+          Metáfora Ética
           <span class="nav-indicator absolute bottom-0 left-0 w-0 h-[3px] bg-gold-500 rounded-full transition-all duration-300"></span>
         </a>
         <a href="#vulnerabilidad" class="nav-item relative py-2 transition text-stone-600 hover:text-gold-600">
@@ -122,9 +122,10 @@
       </div>
     </div>
 
-    <!-- Barra Superior de Control del Carrusel -->
+    <!-- Barra Superior de Control del Carrusel (Oculta a solicitud) -->
     <div
-      class="relative z-20 w-full max-w-7xl mx-auto pt-6 px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-3">
+      class="hidden relative z-20 w-full max-w-7xl mx-auto pt-6 px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-3"
+      style="display: none !important;">
       <!-- Indicador de modo automático -->
       <div
         class="inline-flex items-center gap-2 bg-black/60 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/15 text-[11px] text-stone-200 shadow-md">
@@ -237,7 +238,7 @@
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
 
     <!-- ==========================================================================
-         SECCIÓN 2: PROPÓSITO PROFESIONAL — DOS METÁFORAS ARTÍSTICAS
+         SECCIÓN 1: PROPÓSITO PROFESIONAL — METÁFORA ARTÍSTICA INTERDISCIPLINARIA
          ========================================================================== -->
     <section id="metaforas" class="scroll-mt-20">
       <div class="flex items-center gap-3 mb-3">
@@ -248,126 +249,154 @@
         Propósito Profesional
       </h2>
       <p class="academic-text text-stone-600 text-sm sm:text-base max-w-4xl leading-relaxed mb-8">
-        Nuestro propósito profesional va más allá de las palabras: busca unir la calidad técnica con el bienestar real
-        de las personas. Como equipo de Arquitectura de Interiores e Ingeniería Empresarial y de Sistemas, representamos
-        nuestra identidad y compromiso ético a través de dos grandes obras de arte: <strong>Las Meninas</strong> de
-        Diego Velázquez y <strong>Manos Dibujando</strong> de M. C. Escher.
+        Nuestro propósito profesional va más allá de las palabras: busca articular la excelencia técnica con el bienestar
+        integral y la dignidad de las personas. Como equipo interdisciplinario que integra la <strong>Arquitectura de Interiores</strong>
+        y la <strong>Ingeniería Empresarial y de Sistemas</strong>, representamos nuestra identidad y compromiso deontológico a través
+        de la obra cumbre de Diego Velázquez: <strong>Las Meninas (1656)</strong>. En ella encontramos una poderosa metáfora viva de
+        aquello que une a ambas profesiones: el rigor de una estructura invisible que sostiene el hábitat y los sistemas, la centralidad
+        innegociable del ser humano y la responsabilidad ética de abrir nuestras creaciones al servicio y transparencia de la sociedad.
       </p>
 
-      <!-- Galería de Dos Metáforas con Hotspots -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
+      <!-- Tarjeta Maestra: Metáfora Central Interdisciplinaria -->
+      <div class="museum-card rounded-2xl overflow-hidden p-6 sm:p-8 bg-white border border-stone-200 shadow-sm mb-10">
+        <!-- Cabecera de la Obra -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5 pb-4 border-b border-stone-100">
+          <div class="flex flex-wrap items-center gap-2">
+            <span
+              class="text-xs font-bold text-amber-900 uppercase tracking-wider bg-amber-100 px-3 py-1 rounded-full border border-amber-300">
+              Metáfora Interdisciplinaria Central
+            </span>
+            <span
+              class="text-xs font-semibold text-sky-900 bg-sky-100 px-3 py-1 rounded-full border border-sky-300">
+              Arquitectura de Interiores &amp; Ingeniería de Sistemas
+            </span>
+          </div>
+          <span class="text-xs text-stone-400 font-medium">Diego Velázquez (1656) · Museo Nacional del Prado, Madrid</span>
+        </div>
 
-        <!-- Obra 1: Las Meninas (Arquitectura de Interiores) -->
-        <div class="museum-card rounded-xl overflow-hidden p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-3">
-              <span
-                class="text-xs font-bold text-amber-800 uppercase tracking-wider bg-amber-50 px-2.5 py-1 rounded border border-amber-200">
-                Metáfora 1 · Arquitectura de Interiores
-              </span>
-              <span class="text-[11px] text-stone-400">Diego Velázquez (1656)</span>
-            </div>
-            <h3 class="text-xl font-serif font-bold text-stone-900 mb-2">Las Meninas: La estructura que sostiene el
-              espacio
-            </h3>
-            <p class="text-xs text-stone-500 mb-4">Museo Nacional del Prado, Madrid. Haz clic en los números dorados
-              para ver la explicación de cada punto clave.</p>
+        <div class="mb-6">
+          <h3 class="text-2xl sm:text-3xl font-serif font-bold text-stone-900 mb-2">
+            Las Meninas: La estructura invisible, la perspectiva humana y la arquitectura de sistemas
+          </h3>
+          <p class="text-xs sm:text-sm text-stone-500">
+            Haz clic en los <strong>números dorados (1 al 4)</strong> sobre el lienzo para abrir la sustentación ética detallada que vincula simultáneamente a ambas carreras.
+          </p>
+        </div>
 
-            <!-- Contenedor del Lienzo con Hotspots -->
+        <!-- Grid Principal: Lienzo Interactivo (7 cols) + Pilares Éticos (5 cols) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-6">
+
+          <!-- Lienzo con Hotspots (7 cols) -->
+          <div class="lg:col-span-7 flex flex-col justify-between">
             <div
-              class="relative rounded-lg overflow-hidden border border-stone-300 bg-stone-900 aspect-[4/3] group shadow-inner">
-              <img src="assets/las-meninas.jpg" alt="Las Meninas de Diego Velázquez"
+              class="relative rounded-xl overflow-hidden border-2 border-stone-300 bg-stone-900 aspect-[4/3] group shadow-lg">
+              <img src="assets/las-meninas.jpg" alt="Las Meninas de Diego Velázquez — Metáfora Interdisciplinaria"
                 class="w-full h-full object-cover object-center filter brightness-95 group-hover:brightness-100 transition duration-500" />
 
-              <!-- Hotspots interactivos -->
+              <!-- Hotspots interactivos vinculados a ambas disciplinas -->
               <button class="hotspot-point top-[28%] left-[15%]" data-hotspot="meninas-1"
-                title="1. El bastidor oculto: La calidad que no se ve">
+                title="1. El bastidor oculto: Calidad técnica e infraestructura invisible">
                 <span class="text-xs font-bold">1</span>
               </button>
               <button class="hotspot-point top-[15%] left-[31%]" data-hotspot="meninas-2"
-                title="2. El espejo al fondo: Las personas son lo primero">
+                title="2. El espejo al fondo: Las personas y usuarios en el centro">
                 <span class="text-xs font-bold">2</span>
               </button>
               <button class="hotspot-point top-[58%] left-[58%]" data-hotspot="meninas-3"
-                title="3. El espacio compartido: Inclusión y accesibilidad">
+                title="3. El espacio compartido: Inclusión, accesibilidad universal y equidad">
                 <span class="text-xs font-bold">3</span>
               </button>
               <button class="hotspot-point top-[22%] left-[56%]" data-hotspot="meninas-4"
-                title="4. La puerta abierta: Compromiso con nuestra sociedad">
+                title="4. La puerta abierta: Transparencia y compromiso social">
                 <span class="text-xs font-bold">4</span>
               </button>
 
               <div
-                class="absolute bottom-2 right-2 bg-stone-900/80 text-[10px] text-stone-300 px-2 py-0.5 rounded backdrop-blur-sm pointer-events-none">
-                4 puntos de análisis ético
+                class="absolute bottom-3 right-3 bg-stone-900/85 text-[11px] text-stone-200 px-3 py-1 rounded-full backdrop-blur-md border border-white/20 pointer-events-none font-medium flex items-center gap-1.5 shadow">
+                <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+                4 puntos de análisis interdisciplinario
               </div>
             </div>
-          </div>
 
-          <div class="mt-4 pt-4 border-t border-stone-100 text-xs text-stone-600 leading-relaxed">
-            <strong class="text-stone-900">Significado ético:</strong> En <em>Las Meninas</em>, el pintor trabaja detrás
-            de un gran bastidor que sostiene toda la perspectiva. En arquitectura de interiores, la ética consiste en
-            priorizar la seguridad y el confort real antes que la simple apariencia: asegurar rutas de evacuación
-            amplias, ventilación natural y materiales ignífugos que protejan la vida de las personas ante cualquier
-            emergencia.
-          </div>
-        </div>
-
-        <!-- Obra 2: Manos Dibujando (Ingeniería Empresarial y de Sistemas) -->
-        <div class="museum-card rounded-xl overflow-hidden p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-3">
-              <span
-                class="text-xs font-bold text-blue-800 uppercase tracking-wider bg-blue-50 px-2.5 py-1 rounded border border-blue-200">
-                Metáfora 2 · Ingeniería Empresarial y Sistemas
-              </span>
-              <span class="text-[11px] text-stone-400">M. C. Escher (1948)</span>
+            <!-- Botones de navegación rápida a los 4 puntos -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-3 text-center">
+              <button type="button" onclick="document.querySelector('[data-hotspot=meninas-1]').click()"
+                class="p-2 rounded-lg bg-stone-50 hover:bg-stone-100 border border-stone-200 transition text-[11px] text-stone-700 font-semibold flex flex-col items-center">
+                <span class="w-5 h-5 rounded-full bg-gold-500 text-white flex items-center justify-center text-[10px] font-bold mb-1">1</span>
+                <span>Bastidor Oculto</span>
+              </button>
+              <button type="button" onclick="document.querySelector('[data-hotspot=meninas-2]').click()"
+                class="p-2 rounded-lg bg-stone-50 hover:bg-stone-100 border border-stone-200 transition text-[11px] text-stone-700 font-semibold flex flex-col items-center">
+                <span class="w-5 h-5 rounded-full bg-gold-500 text-white flex items-center justify-center text-[10px] font-bold mb-1">2</span>
+                <span>Espejo Central</span>
+              </button>
+              <button type="button" onclick="document.querySelector('[data-hotspot=meninas-3]').click()"
+                class="p-2 rounded-lg bg-stone-50 hover:bg-stone-100 border border-stone-200 transition text-[11px] text-stone-700 font-semibold flex flex-col items-center">
+                <span class="w-5 h-5 rounded-full bg-gold-500 text-white flex items-center justify-center text-[10px] font-bold mb-1">3</span>
+                <span>Espacio Inclusivo</span>
+              </button>
+              <button type="button" onclick="document.querySelector('[data-hotspot=meninas-4]').click()"
+                class="p-2 rounded-lg bg-stone-50 hover:bg-stone-100 border border-stone-200 transition text-[11px] text-stone-700 font-semibold flex flex-col items-center">
+                <span class="w-5 h-5 rounded-full bg-gold-500 text-white flex items-center justify-center text-[10px] font-bold mb-1">4</span>
+                <span>Puerta Abierta</span>
+              </button>
             </div>
-            <h3 class="text-xl font-serif font-bold text-stone-900 mb-2">Manos Dibujando: La responsabilidad detrás de
-              cada sistema</h3>
-            <p class="text-xs text-stone-500 mb-4">Litografía original. Haz clic en los números dorados para ver la
-              explicación de cada punto clave.</p>
+          </div>
 
-            <!-- Contenedor del Lienzo con Hotspots -->
-            <div
-              class="relative rounded-lg overflow-hidden border border-stone-300 bg-stone-900 aspect-[4/3] group shadow-inner">
-              <img src="assets/manos-dibujando.jpg" alt="Drawing Hands de M. C. Escher"
-                class="w-full h-full object-cover object-center filter brightness-95 group-hover:brightness-100 transition duration-500" />
+          <!-- Pilares Interdisciplinarios a la Derecha (5 cols) -->
+          <div class="lg:col-span-5 flex flex-col justify-between space-y-4">
 
-              <!-- Hotspots interactivos -->
-              <button class="hotspot-point top-[32%] left-[34%]" data-hotspot="escher-1"
-                title="1. La mano que dibuja: La responsabilidad de quien programa">
-                <span class="text-xs font-bold">1</span>
-              </button>
-              <button class="hotspot-point top-[68%] left-[66%]" data-hotspot="escher-2"
-                title="2. El impacto social: La tecnología cambia vidas">
-                <span class="text-xs font-bold">2</span>
-              </button>
-              <button class="hotspot-point top-[18%] left-[80%]" data-hotspot="escher-3"
-                title="3. La base de datos: Cuidar que no haya prejuicios">
-                <span class="text-xs font-bold">3</span>
-              </button>
-              <button class="hotspot-point top-[78%] left-[24%]" data-hotspot="escher-4"
-                title="4. La supervisión humana: Control y supervisión profesional">
-                <span class="text-xs font-bold">4</span>
-              </button>
-
-              <div
-                class="absolute bottom-2 right-2 bg-stone-900/80 text-[10px] text-stone-300 px-2 py-0.5 rounded backdrop-blur-sm pointer-events-none">
-                4 puntos de análisis ético
+            <!-- Bloque Arquitectura de Interiores -->
+            <div class="p-4 sm:p-5 rounded-xl bg-amber-50/70 border border-amber-200/90 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="text-base">🏛️</span>
+                  <h4 class="font-serif font-bold text-amber-950 text-base">Vinculación: Arquitectura de Interiores</h4>
+                </div>
+                <ul class="space-y-2 text-xs text-stone-700 leading-relaxed">
+                  <li class="flex items-start gap-2">
+                    <span class="text-amber-700 font-bold mt-0.5">•</span>
+                    <span><strong>La estructura oculta sobre la cosmética:</strong> El bastidor simboliza que la belleza de un recinto no tiene valor ético si sus muros, cálculo sismorresistente, cableado y rutas de evacuación no resguardan la integridad física de las personas.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-amber-700 font-bold mt-0.5">•</span>
+                    <span><strong>El habitante en el centro y diseño universal:</strong> El espejo y los personajes reflejan que el diseño interior existe para brindar cobijo digno y bienestar cotidiano a niños, adultos mayores y personas con discapacidad sin barreras arquitectónicas.</span>
+                  </li>
+                </ul>
               </div>
             </div>
+
+            <!-- Bloque Ingeniería Empresarial y de Sistemas -->
+            <div class="p-4 sm:p-5 rounded-xl bg-sky-50/70 border border-sky-200/90 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="text-base">💻</span>
+                  <h4 class="font-serif font-bold text-sky-950 text-base">Vinculación: Ing. Empresarial y de Sistemas</h4>
+                </div>
+                <ul class="space-y-2 text-xs text-stone-700 leading-relaxed">
+                  <li class="flex items-start gap-2">
+                    <span class="text-sky-700 font-bold mt-0.5">•</span>
+                    <span><strong>La arquitectura de software invisible:</strong> Al igual que el lienzo visto por detrás, el backend, las bases de datos y la seguridad lógica son los cimientos invisibles que garantizan que el sistema no falle ni vulnere la información confidencial del usuario.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-sky-700 font-bold mt-0.5">•</span>
+                    <span><strong>Algoritmos humanos y transparencia pública:</strong> El espejo y la puerta abierta recuerdan que ningún sistema o IA debe operar como una caja negra inaccesible: los algoritmos deben auditarse para no discriminar y rendir cuentas ante la sociedad.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
           </div>
 
-          <div class="mt-4 pt-4 border-t border-stone-100 text-xs text-stone-600 leading-relaxed">
-            <strong class="text-stone-900">Significado ético:</strong> En <em>Manos Dibujando</em>, cada mano da forma a
-            la otra en un bucle continuo. En ingeniería de sistemas, los programas y algoritmos no son autónomos ni
-            neutrales: son diseñados por personas e influyen directamente en la vida de los ciudadanos. La
-            responsabilidad del profesional consiste en auditar el sistema y nunca desentenderse diciendo que «el
-            sistema lo decidió».
-          </div>
         </div>
 
+        <!-- Síntesis Deontológica Integrada -->
+        <div class="pt-5 border-t border-stone-200 text-xs sm:text-sm leading-relaxed">
+          <strong class="text-stone-900 block mb-1">Convergencia Ética de la Metáfora:</strong>
+          <p class="academic-text text-stone-700">
+            En <em>Las Meninas</em>, Velázquez no se limita a pintar una escena: deconstruye el acto mismo de crear, mostrando el soporte estructural, el observador como protagonista y la luz exterior. Para nuestro equipo interdisciplinario, esta obra encarna que tanto proyectar un hábitat físico habitable como estructurar un sistema empresarial son actos de profunda responsabilidad moral: lo primordial nunca radica en el alarde superficial ni en la rentabilidad inmediata, sino en la honestidad técnica de la estructura interna consagrada a la seguridad, justicia y dignidad de cada ser humano.
+          </p>
+        </div>
       </div>
 
       <!-- Sustentación Filosófica Aristotélica -->
@@ -574,14 +603,7 @@
           Compromiso Deontológico del Equipo ante estas Vulnerabilidades
         </h4>
         <p class="academic-text text-xs sm:text-sm leading-relaxed text-stone-700 italic">
-          "Como equipo, entendemos que, al igual que en <em>Las Meninas</em> y en el trazo recursivo de
-          <em>Escher</em>, lo verdaderamente importante no siempre salta a la vista, sino en lo que organizamos detrás
-          del lienzo y del código. Nos comprometemos a trabajar con la honestidad y responsabilidad propias de la
-          <em>areté</em>, verificando que nuestros diseños de interiores integren el diseño universal y la seguridad
-          física para las personas con discapacidad y adultos mayores, y que los sistemas empresariales que
-          organicemos no oculten sesgos discriminatorios. La accesibilidad y la equidad deben formar parte de esa
-          estructura invisible desde el inicio, consagrando a la persona humana siempre como fin en sí mismo y jamás
-          como medio."
+          «Como equipo, entendemos que, al igual que en <em>Las Meninas</em>, lo importante no siempre está a simple vista, sino también en lo que hay detrás del lienzo. Nos comprometemos a trabajar con honestidad y responsabilidad, creando espacios seguros y accesibles, y sistemas justos que no perjudiquen a las personas. Buscamos que la accesibilidad, la equidad y el bienestar estén presentes desde el inicio, poniendo siempre a la persona como prioridad.»
         </p>
       </div>
       </div>
@@ -749,10 +771,7 @@
               sostenibilidad financiera son necesarias para viabilizar nuestra práctica técnica.»
             </p>
             <p class="academic-text text-xs sm:text-sm text-stone-300 leading-relaxed">
-              En coherencia con la metáfora de <em>Las Meninas</em> y <em>Manos Dibujando</em>, sostenemos que el rédito
-              mercantil de una obra o de un software nunca justificará ocultar riesgos, abaratar materiales ignífugos ni
-              perpetuar sesgos de discriminación. La persona humana permanece en la cúspide incondicional de toda
-              nuestra toma de decisiones.
+              En coherencia con la metáfora de <em>Las Meninas</em>, sostenemos que el beneficio de una obra nunca justificará ocultar riesgos ni reducir la seguridad por ahorrar costos. La persona humana siempre será nuestra prioridad en cada decisión.
             </p>
           </div>
           <div class="mt-4 pt-4 border-t border-stone-800 text-[11px] text-gold-400 font-mono">
@@ -772,229 +791,594 @@
         <div class="h-px bg-stone-200 flex-1"></div>
       </div>
       <h2 class="text-3xl sm:text-4xl font-serif font-bold text-navy-800 mb-3">
-        Mapa Crítico Profesional: Dicotomía de Luces y Sombras
+        Mapa Crítico Profesional: Mapa de Negligencias Éticas y Acciones Positivas
       </h2>
-      <p class="academic-text text-stone-600 text-sm sm:text-base max-w-4xl leading-relaxed mb-8">
+      <p class="academic-text text-stone-600 text-sm sm:text-base max-w-4xl leading-relaxed mb-6">
         El verdadero pensamiento ético exige honestidad intelectual para reconocer las fallas y negligencias reales del
         propio campo laboral, desmantelando los razonamientos falaces y la posverdad que pretenden normalizarlas.
-        Presentamos la confrontación dialéctica entre las tres sombras más graves del ejercicio profesional en el Perú y
-        las acciones positivas con las que nos comprometemos como futuros líderes.
+        Presentamos nuestra matriz infográfica que confronta dialécticamente las tres situaciones críticas más recurrentes
+        en el Perú frente a las acciones positivas con las que nos comprometemos como futuros profesionales, garantizando
+        que la dignidad humana, la transparencia técnica y la seguridad comunitaria prevalezcan sobre cualquier interés instrumental.
       </p>
 
-      <!-- Botones de Filtro Sombras / Luces -->
-      <div class="flex items-center justify-between flex-wrap gap-4 mb-8">
-        <div class="inline-flex rounded-lg border border-stone-300 bg-stone-100 p-1">
-          <button
-            class="filter-view-btn px-4 py-1.5 rounded-md text-xs font-bold bg-stone-900 text-white transition shadow-sm"
-            data-filter="all">
-            Ver Comparativa Completa
+      <!-- Barra de Controles y Filtros de la Infografía -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 bg-white p-4 rounded-xl border border-stone-200 shadow-sm">
+        <!-- Indicador de Navegación / Pestañas (Botón 'Ver Lámina Original' oculto) -->
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-bold text-stone-600 uppercase tracking-wider flex items-center gap-1.5">
+            <span>🎯</span> Explorar infografía:
+          </span>
+          <!-- Botones de alternancia de vista ocultos -->
+          <button id="tab-original-view" class="hidden" style="display: none !important;" onclick="switchInfographicView('original')">
+            <span>🖼️</span> Ver Lámina Original
           </button>
-          <button
-            class="filter-view-btn px-4 py-1.5 rounded-md text-xs font-semibold text-stone-700 hover:text-stone-900 transition"
-            data-filter="sombras">
-            Solo Sombras (Negligencias)
-          </button>
-          <button
-            class="filter-view-btn px-4 py-1.5 rounded-md text-xs font-semibold text-stone-700 hover:text-stone-900 transition"
-            data-filter="luces">
-            Solo Luces (Acciones Positivas)
+          <button id="tab-interactive-view" class="hidden" style="display: none !important;" onclick="switchInfographicView('interactive')">
+            <span>📊</span> Matriz Interactiva
           </button>
         </div>
 
-        <div class="text-xs text-stone-500 font-medium">
-          Rigor conceptual: Falacias lógicas, Posverdad y Método Socrático
+        <!-- Filtros Rápidos de Contenido para la Matriz -->
+        <div id="interactive-filters-bar" class="flex flex-wrap items-center gap-1.5 text-xs">
+          <button class="filter-sit-btn px-3 py-1.5 rounded-lg border border-stone-300 bg-stone-900 text-white font-semibold transition"
+            data-filter="all">Todas las Situaciones</button>
+          <button class="filter-sit-btn px-3 py-1.5 rounded-lg border border-stone-200 bg-stone-50 hover:bg-stone-100 text-stone-700 font-semibold transition"
+            data-filter="sit-1">1. Seguridad (Arq.)</button>
+          <button class="filter-sit-btn px-3 py-1.5 rounded-lg border border-stone-200 bg-stone-50 hover:bg-stone-100 text-stone-700 font-semibold transition"
+            data-filter="sit-2">2. Algoritmos (Sist.)</button>
+          <button class="filter-sit-btn px-3 py-1.5 rounded-lg border border-stone-200 bg-stone-50 hover:bg-stone-100 text-stone-700 font-semibold transition"
+            data-filter="sit-3">3. Presupuestos</button>
+          <button class="filter-sit-btn px-3 py-1.5 rounded-lg border border-red-300 bg-red-50 hover:bg-red-100 text-red-800 font-semibold transition"
+            data-filter="sombras">Solo Negligencias ⚠️</button>
+          <button class="filter-sit-btn px-3 py-1.5 rounded-lg border border-emerald-300 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-semibold transition"
+            data-filter="luces">Solo Acciones 🍃</button>
         </div>
       </div>
 
-      <!-- Matriz Dicotómica de 3 Casos Críticos -->
-      <div class="space-y-8 mb-12">
+      <!-- ===================================================================
+           VISTA 1: MATRIZ INFOGRÁFICA INTERACTIVA (MODELADO COMPLETO)
+           =================================================================== -->
+      <div id="view-interactive-wrapper" class="space-y-6 mb-12">
+        <div class="infographic-poster p-4 sm:p-8">
+          
+          <!-- Banner Superior de la Infografía (Fiel al Diseño Original) -->
+          <div class="border-b-2 border-stone-400/60 pb-6 mb-6">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+              
+              <!-- Nota Izquierda Pegada con Cinta -->
+              <div class="infographic-note p-3 sm:p-4 rounded-xl -rotate-2 max-w-xs text-center lg:text-left">
+                <span class="text-xs sm:text-sm font-serif italic text-stone-800 font-medium block leading-snug">
+                  🌿 «La ética también se diseña, se construye y se programa.»
+                </span>
+              </div>
 
-        <!-- Caso 1: Seguridad en Remodelaciones -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
+              <!-- Título Central Monumental -->
+              <div class="flex-1 text-center max-w-2xl px-2">
+                <h3 class="infographic-title-vintage text-2xl sm:text-3xl lg:text-4xl font-extrabold uppercase leading-tight">
+                  Mapa de Negligencias Éticas y Acciones Positivas
+                </h3>
+                <div class="mt-2 inline-flex items-center justify-center gap-2 text-xs sm:text-sm text-stone-700 font-serif">
+                  <span>Mismas situaciones</span>
+                  <span class="text-gold-600 font-bold">·</span>
+                  <span>Dos caminos</span>
+                  <span class="text-gold-600 font-bold">·</span>
+                  <span>Un mismo objetivo:</span>
+                  <strong class="text-stone-900 font-bold uppercase tracking-wider font-cinzel text-xs sm:text-sm bg-amber-200/60 px-2 py-0.5 rounded border border-amber-300">
+                    El Bien Común
+                  </strong>
+                </div>
+              </div>
 
-          <!-- Sombra 1 -->
-          <div
-            class="dichotomy-card museum-card rounded-xl p-6 bg-stone-900 text-stone-200 border-l-4 border-red-600 shadow-sm"
-            data-type="sombra">
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-bold text-red-400 uppercase tracking-wider flex items-center gap-1.5">
-                <span class="w-2 h-2 rounded-full bg-red-500"></span>
-                Sombra 1 · Negligencia en Arquitectura
-              </span>
-              <span class="text-[10px] text-stone-400 bg-stone-800 px-2 py-0.5 rounded">Falacia Naturalista</span>
-            </div>
-            <h4 class="text-lg font-serif font-bold text-white mb-2">
-              Obras y remodelaciones de interiores ejecutadas sin respetar normas de seguridad humana
-            </h4>
-            <p class="text-xs text-stone-300 leading-relaxed mb-4">
-              Se anulan salidas de evacuación, se reducen anchos reglamentarios de pasadizos o se colocan revestimientos
-              inflamables para abaratar costos en galerías comerciales y viviendas peruanas ampliadas clandestinamente
-              sin licencia técnica.
-            </p>
-            <div class="p-3 bg-stone-800/80 rounded border border-stone-700 text-xs space-y-1.5 mb-3">
-              <p><strong class="text-red-300">Falacia que la sostiene:</strong> <em>Falacia naturalista</em> («así se ha
-                construido siempre en el Perú y nunca ha pasado nada»). La costumbre informal se disfraza de norma
-                técnica válida, ignorando tragedias históricas de incendios comerciales.</p>
-              <p><strong class="text-stone-300">Población afectada:</strong> Personas con discapacidad y adultos mayores
-                que carecen de agilidad para escapar en siniestros, además de trabajadores de dichos recintos.</p>
+              <!-- Nota Derecha + Balanza de la Justicia -->
+              <div class="flex items-center gap-3 max-w-xs justify-center lg:justify-end">
+                <div class="infographic-note p-3 sm:p-4 rounded-xl rotate-2 text-center lg:text-right">
+                  <span class="text-xs sm:text-sm font-serif italic text-stone-800 font-medium block leading-snug">
+                    «La diferencia está en las decisiones»
+                  </span>
+                </div>
+                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden flex-shrink-0 bg-amber-100/80 p-1 border border-amber-300/80 shadow-inner">
+                  <img src="assets/infografia-balanza-header.jpg" alt="Balanza de la Justicia"
+                    class="w-full h-full object-contain mix-blend-multiply" />
+                </div>
+              </div>
+
             </div>
           </div>
 
-          <!-- Luz 1 -->
-          <div class="dichotomy-card museum-card rounded-xl p-6 bg-white border-l-4 border-emerald-600 shadow-sm"
-            data-type="luz">
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-bold text-emerald-800 uppercase tracking-wider flex items-center gap-1.5">
-                <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
-                Luz 1 · Acción Positiva Profesional
-              </span>
-              <span
-                class="text-[10px] text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-medium border border-emerald-200">Areté
-                Deontológica</span>
+          <!-- Encabezados de las 5 Columnas (Exactos al Diseño de la Lámina) -->
+          <div class="hidden lg:grid grid-cols-12 gap-3 mb-4 text-xs font-bold font-serif text-stone-900 text-center">
+            <div class="col-span-3 bg-[#EFE8D8] border-2 border-[#D5CBB8] p-3 rounded-xl shadow-sm flex items-center justify-center gap-2 text-stone-900 text-sm">
+              <span class="text-base">📍</span>
+              <span>Situación</span>
             </div>
-            <h4 class="text-lg font-serif font-bold text-stone-900 mb-2">
-              Diseño universal irrenunciable y rigor normativo desde el anteproyecto
-            </h4>
-            <p class="text-xs text-stone-700 leading-relaxed mb-4">
-              Incorporar las directrices de seguridad humana y accesibilidad universal como parámetros no negociables en
-              los contratos de diseño. Sustentar técnicamente ante el cliente por qué ciertos materiales ignífugos y
-              anchos de vía no pueden recortarse.
-            </p>
-            <div class="p-3 bg-emerald-50/60 rounded border border-emerald-200 text-xs space-y-1.5 mb-3">
-              <p><strong class="text-emerald-900">Solución operativa:</strong> Exigir el cumplimiento estricto del
-                Reglamento Nacional de Edificaciones (Normas A.120 y A.130). En caso de negativa reiterada del mandante,
-                dejar constancia pericial escrita o declinar éticamente la ejecución del proyecto.</p>
-              <p><strong class="text-stone-800">Impacto positivo:</strong> Prevención activa de tragedias, reducción de
-                la siniestralidad urbana y salvaguarda de vidas inocentes.</p>
+            <div class="col-span-2 bg-[#F7E1D7] border-2 border-[#EAC5B4] p-3 rounded-xl shadow-sm flex items-center justify-center gap-2 text-red-950 text-xs">
+              <span class="text-base">⚠️</span>
+              <span>Negligencia o falla ética identificada</span>
             </div>
+            <div class="col-span-2 bg-[#EBF0DC] border-2 border-[#D1DFC1] p-3 rounded-xl shadow-sm flex items-center justify-center gap-2 text-stone-900 text-xs">
+              <span class="text-base">🧠</span>
+              <span>¿Qué falacia o distorsión la sostiene?</span>
+            </div>
+            <div class="col-span-2 bg-[#F5E5D8] border-2 border-[#E5D0BF] p-3 rounded-xl shadow-sm flex items-center justify-center gap-2 text-amber-950 text-xs">
+              <span class="text-base">👥</span>
+              <span>¿A qué población afecta? (AC2)</span>
+            </div>
+            <div class="col-span-3 bg-[#E5F1E2] border-2 border-[#C6DFC2] p-3 rounded-xl shadow-sm flex items-center justify-center gap-2 text-emerald-950 text-sm">
+              <span class="text-base">🍃</span>
+              <span>Acciones positivas</span>
+            </div>
+          </div>
+
+          <!-- Matriz: Filas de Situaciones -->
+          <div class="space-y-5">
+
+            <!-- ===============================================================
+                 FILA 1: Acabados y Remodelaciones de Interiores
+                 =============================================================== -->
+            <div class="infographic-row grid grid-cols-1 lg:grid-cols-12 gap-3 rounded-2xl p-3 sm:p-4 bg-white/80 border border-stone-300 shadow-sm"
+              data-sit-id="sit-1">
+              
+              <!-- Columna 1: Situación -->
+              <div class="lg:col-span-3 col-card-situacion p-4 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-200 text-amber-950 border border-amber-300">
+                      Arquitectura de Interiores
+                    </span>
+                    <span class="text-[10px] text-stone-500 font-mono font-bold">Caso 01</span>
+                  </div>
+                  <h4 class="font-serif font-bold text-stone-900 text-sm sm:text-base leading-snug mb-3">
+                    Ejecutar acabados y remodelaciones de interiores sin respetar las normas de seguridad.
+                  </h4>
+                </div>
+                <div class="relative rounded-xl overflow-hidden border-2 border-stone-300 shadow-sm mt-2 bg-stone-900 group">
+                  <img src="assets/infografia-salida-emergencia.jpg" alt="Salida de emergencia y extintor"
+                    class="w-full h-32 object-cover object-center filter brightness-95 group-hover:brightness-105 group-hover:scale-105 transition duration-300" />
+                  <span class="absolute bottom-1.5 right-1.5 bg-black/75 text-white text-[9px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">
+                    🚪 Ruta de evacuación
+                  </span>
+                </div>
+              </div>
+
+              <!-- Columna 2: Negligencia -->
+              <div class="lg:col-span-2 cell-sombras col-card-negligencia p-4 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-1.5 mb-2 text-red-700 font-bold text-xs uppercase tracking-wider">
+                    <span class="text-sm">⚠️</span>
+                    <span>Falla Ética</span>
+                  </div>
+                  <p class="text-xs text-stone-800 leading-relaxed font-normal">
+                    Se eliminan salidas de emergencia, se reducen anchos de pasillo o se usan materiales no ignífugos para abaratar el presupuesto, sobre todo en locales comerciales y viviendas de Lima que se amplían sin licencia.
+                  </p>
+                </div>
+                <span class="mt-3 text-[10px] font-semibold text-red-700 bg-red-100/80 px-2 py-0.5 rounded border border-red-200 w-fit">
+                  Riesgo Vital Inminente
+                </span>
+              </div>
+
+              <!-- Columna 3: Falacia -->
+              <div class="lg:col-span-2 cell-sombras col-card-falacia p-4 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-1.5 mb-2 text-stone-900 font-bold text-xs">
+                    <span class="text-sm">🧠</span>
+                    <span class="font-serif font-bold text-sm text-stone-900">Falacia naturalista.</span>
+                  </div>
+                  <p class="text-xs text-stone-800 leading-relaxed">
+                    Se justifica diciendo <em>«así se ha construido siempre en el Perú y nunca ha pasado nada»</em>: la costumbre se presenta como prueba de que la práctica es correcta, aunque la normativa y los incendios en galerías comerciales demuestren lo contrario.
+                  </p>
+                </div>
+                <span class="mt-3 text-[10px] font-semibold text-stone-600 bg-stone-100 px-2 py-0.5 rounded border border-stone-200 w-fit">
+                  Distorsión por Costumbre
+                </span>
+              </div>
+
+              <!-- Columna 4: Población Vulnerable (AC2) -->
+              <div class="lg:col-span-2 cell-sombras col-card-vulnerable p-4 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-1.5 mb-2 text-amber-950 font-bold text-xs">
+                    <span class="text-sm">👥</span>
+                    <span class="text-xs font-semibold">Población Afectada</span>
+                  </div>
+                  <p class="text-xs text-stone-800 leading-relaxed">
+                    <strong>Personas con discapacidad y adultos mayores</strong>, que son quienes menos posibilidad tienen de evacuar por sí mismos un ambiente sin rutas de escape accesibles; también los trabajadores de esos locales.
+                  </p>
+                </div>
+                <span class="mt-3 text-[10px] font-semibold text-amber-800 bg-amber-100/90 px-2 py-0.5 rounded border border-amber-300 w-fit">
+                  ♿ Adultos Mayores &amp; Conadis
+                </span>
+              </div>
+
+              <!-- Columna 5: Acciones Positivas -->
+              <div class="lg:col-span-3 cell-luces col-card-accion p-4 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-1.5 mb-2 text-emerald-950 font-bold text-xs uppercase tracking-wider">
+                    <span class="text-sm">🍃</span>
+                    <span>Acciones Positivas</span>
+                  </div>
+                  <ul class="text-xs text-stone-800 space-y-2 leading-relaxed">
+                    <li class="flex items-start gap-1.5">
+                      <span class="text-emerald-700 font-bold mt-0.5">•</span>
+                      <span>Incorporar el <strong>diseño universal</strong> y la seguridad desde el anteproyecto preliminar.</span>
+                    </li>
+                    <li class="flex items-start gap-1.5">
+                      <span class="text-emerald-700 font-bold mt-0.5">•</span>
+                      <span>Sustentar ante el cliente por qué ciertos materiales ignífugos y rutas de evacuación <strong>no son negociables</strong>.</span>
+                    </li>
+                    <li class="flex items-start gap-1.5">
+                      <span class="text-emerald-700 font-bold mt-0.5">•</span>
+                      <span>Dejar <strong>registro escrito</strong> de las observaciones técnicas cuando el cliente insiste en recortarlas.</span>
+                    </li>
+                  </ul>
+                </div>
+                <span class="mt-3 inline-block text-[10px] font-semibold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded border border-emerald-300 w-fit">
+                  Deontología en Edificaciones (RNE)
+                </span>
+              </div>
+
+            </div>
+
+            <!-- ===============================================================
+                 FILA 2: Sistemas Automatizados de Selección y Algoritmos
+                 =============================================================== -->
+            <div class="infographic-row grid grid-cols-1 lg:grid-cols-12 gap-3 rounded-2xl p-3 sm:p-4 bg-white/80 border border-stone-300 shadow-sm"
+              data-sit-id="sit-2">
+              
+              <!-- Columna 1: Situación -->
+              <div class="lg:col-span-3 col-card-situacion p-4 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-sky-200 text-sky-950 border border-sky-300">
+                      Ingeniería de Sistemas &amp; IA
+                    </span>
+                    <span class="text-[10px] text-stone-500 font-mono font-bold">Caso 02</span>
+                  </div>
+                  <h4 class="font-serif font-bold text-stone-900 text-sm sm:text-base leading-snug mb-3">
+                    Implementar sistemas automatizados de selección de personal, scoring o atención al cliente sin auditar los datos con los que fueron entrenados.
+                  </h4>
+                </div>
+                <div class="relative rounded-xl overflow-hidden border-2 border-stone-300 shadow-sm mt-2 bg-stone-900 group">
+                  <img src="assets/infografia-ia-algoritmos.jpg" alt="Sistema automatizado y modelo IA"
+                    class="w-full h-32 object-cover object-center filter brightness-95 group-hover:brightness-105 group-hover:scale-105 transition duration-300" />
+                  <span class="absolute bottom-1.5 right-1.5 bg-black/75 text-white text-[9px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">
+                    🤖 Modelo y Chatbot IA
+                  </span>
+                </div>
+              </div>
+
+              <!-- Columna 2: Negligencia -->
+              <div class="lg:col-span-2 cell-sombras col-card-negligencia p-4 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-1.5 mb-2 text-red-700 font-bold text-xs uppercase tracking-wider">
+                    <span class="text-sm">⚠️</span>
+                    <span>Falla Ética</span>
+                  </div>
+                  <p class="text-xs text-stone-800 leading-relaxed font-normal">
+                    Se presentan ante la empresa como decisiones «objetivas» por ser calculadas por una máquina, sin auditar los datos ni revisar los sesgos.
+                  </p>
+                </div>
+                <span class="mt-3 text-[10px] font-semibold text-red-700 bg-red-100/80 px-2 py-0.5 rounded border border-red-200 w-fit">
+                  Opacidad de Caja Negra
+                </span>
+              </div>
+
+              <!-- Columna 3: Falacia -->
+              <div class="lg:col-span-2 cell-sombras col-card-falacia p-4 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-1.5 mb-2 text-stone-900 font-bold text-xs">
+                    <span class="text-sm">🧠</span>
+                    <span class="font-serif font-bold text-sm text-stone-900">Apelación a la autoridad.</span>
+                  </div>
+                  <p class="text-xs text-stone-800 leading-relaxed">
+                    Se acepta el resultado del sistema solo porque <em>«lo dice el algoritmo»</em> o porque lo aprobó la gerencia, sin revisar los criterios ni los datos históricos que pueden arrastrar sesgos de género, edad o procedencia.
+                  </p>
+                </div>
+                <span class="mt-3 text-[10px] font-semibold text-stone-600 bg-stone-100 px-2 py-0.5 rounded border border-stone-200 w-fit">
+                  Falacia de Autoridad Técnica
+                </span>
+              </div>
+
+              <!-- Columna 4: Población Vulnerable (AC2) -->
+              <div class="lg:col-span-2 cell-sombras col-card-vulnerable p-4 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-1.5 mb-2 text-amber-950 font-bold text-xs">
+                    <span class="text-sm">👥</span>
+                    <span class="text-xs font-semibold">Población Afectada</span>
+                  </div>
+                  <p class="text-xs text-stone-800 leading-relaxed">
+                    <strong>Postulantes y trabajadores en situación de desventaja</strong>: mujeres, personas mayores, egresados de universidades de provincia o personas con discapacidad, que quedan excluidos sin conocer el motivo del rechazo.
+                  </p>
+                </div>
+                <span class="mt-3 text-[10px] font-semibold text-amber-800 bg-amber-100/90 px-2 py-0.5 rounded border border-amber-300 w-fit">
+                  Discriminación Encubierta
+                </span>
+              </div>
+
+              <!-- Columna 5: Acciones Positivas -->
+              <div class="lg:col-span-3 cell-luces col-card-accion p-4 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-1.5 mb-2 text-emerald-950 font-bold text-xs uppercase tracking-wider">
+                    <span class="text-sm">🍃</span>
+                    <span>Acciones Positivas</span>
+                  </div>
+                  <ul class="text-xs text-stone-800 space-y-2 leading-relaxed">
+                    <li class="flex items-start gap-1.5">
+                      <span class="text-emerald-700 font-bold mt-0.5">•</span>
+                      <span><strong>Auditar periódicamente</strong> los datos y resultados de los modelos predictivos.</span>
+                    </li>
+                    <li class="flex items-start gap-1.5">
+                      <span class="text-emerald-700 font-bold mt-0.5">•</span>
+                      <span>Documentar los criterios de decisión en un <strong>lenguaje comprensible</strong> para el área usuaria.</span>
+                    </li>
+                    <li class="flex items-start gap-1.5">
+                      <span class="text-emerald-700 font-bold mt-0.5">•</span>
+                      <span>Exigir <strong>revisión humana obligatoria</strong> en decisiones que afecten a personas y capacitar al equipo en sesgos algorítmicos.</span>
+                    </li>
+                  </ul>
+                </div>
+                <span class="mt-3 inline-block text-[10px] font-semibold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded border border-emerald-300 w-fit">
+                  Supervisión Humana (Human-in-the-Loop)
+                </span>
+              </div>
+
+            </div>
+
+            <!-- ===============================================================
+                 FILA 3: Maquillar presupuestos, plazos e informes
+                 =============================================================== -->
+            <div class="infographic-row grid grid-cols-1 lg:grid-cols-12 gap-3 rounded-2xl p-3 sm:p-4 bg-white/80 border border-stone-300 shadow-sm"
+              data-sit-id="sit-3">
+              
+              <!-- Columna 1: Situación -->
+              <div class="lg:col-span-3 col-card-situacion p-4 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-purple-200 text-purple-950 border border-purple-300">
+                      Transversal · Consultoría
+                    </span>
+                    <span class="text-[10px] text-stone-500 font-mono font-bold">Caso 03</span>
+                  </div>
+                  <h4 class="font-serif font-bold text-stone-900 text-sm sm:text-base leading-snug mb-3">
+                    Maquillar presupuestos, plazos e informes ante el cliente o la jefatura.
+                  </h4>
+                </div>
+                <div class="relative rounded-xl overflow-hidden border-2 border-stone-300 shadow-sm mt-2 bg-stone-900 group">
+                  <img src="assets/infografia-presupuesto-maquillado.jpg" alt="Reporte optimista ficticio"
+                    class="w-full h-32 object-cover object-center filter brightness-95 group-hover:brightness-105 group-hover:scale-105 transition duration-300" />
+                  <span class="absolute bottom-1.5 right-1.5 bg-black/75 text-white text-[9px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm">
+                    📊 «Todo va según lo planeado»
+                  </span>
+                </div>
+              </div>
+
+              <!-- Columna 2: Negligencia -->
+              <div class="lg:col-span-2 cell-sombras col-card-negligencia p-4 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-1.5 mb-2 text-red-700 font-bold text-xs uppercase tracking-wider">
+                    <span class="text-sm">⚠️</span>
+                    <span>Falla Ética</span>
+                  </div>
+                  <p class="text-xs text-stone-800 leading-relaxed font-normal">
+                    Se prometen costos y tiempos que no se cumplirán, o se reportan avances más optimistas que los reales para no perder el contrato.
+                  </p>
+                </div>
+                <span class="mt-3 text-[10px] font-semibold text-red-700 bg-red-100/80 px-2 py-0.5 rounded border border-red-200 w-fit">
+                  Falsa Expectativa &amp; Sobrecostos
+                </span>
+              </div>
+
+              <!-- Columna 3: Falacia -->
+              <div class="lg:col-span-2 cell-sombras col-card-falacia p-4 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-1.5 mb-2 text-stone-900 font-bold text-xs">
+                    <span class="text-sm">🧠</span>
+                    <span class="font-serif font-bold text-sm text-stone-900">Posverdad.</span>
+                  </div>
+                  <p class="text-xs text-stone-800 leading-relaxed">
+                    Se apela a la confianza, al entusiasmo y a la presión comercial del momento en lugar de a datos verificables; cuando el retraso o el sobrecosto aparece, se construye un relato que traslada la culpa al cliente o a factores externos.
+                  </p>
+                </div>
+                <span class="mt-3 text-[10px] font-semibold text-stone-600 bg-stone-100 px-2 py-0.5 rounded border border-stone-200 w-fit">
+                  Relato Ficticio &amp; Evasión
+                </span>
+              </div>
+
+              <!-- Columna 4: Población Vulnerable (AC2) -->
+              <div class="lg:col-span-2 cell-sombras col-card-vulnerable p-4 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-1.5 mb-2 text-amber-950 font-bold text-xs">
+                    <span class="text-sm">👥</span>
+                    <span class="text-xs font-semibold">Población Afectada</span>
+                  </div>
+                  <p class="text-xs text-stone-800 leading-relaxed">
+                    <strong>Familias y pequeños empresarios de escasos recursos</strong>, que invierten sus ahorros en una remodelación o en un sistema y terminan con obras paralizadas, sobrecostos o servicios que nunca funcionaron como se prometió.
+                  </p>
+                </div>
+                <span class="mt-3 text-[10px] font-semibold text-amber-800 bg-amber-100/90 px-2 py-0.5 rounded border border-amber-300 w-fit">
+                  Ahorro Familiar Afectado
+                </span>
+              </div>
+
+              <!-- Columna 5: Acciones Positivas -->
+              <div class="lg:col-span-3 cell-luces col-card-accion p-4 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-1.5 mb-2 text-emerald-950 font-bold text-xs uppercase tracking-wider">
+                    <span class="text-sm">🍃</span>
+                    <span>Acciones Positivas</span>
+                  </div>
+                  <ul class="text-xs text-stone-800 space-y-2 leading-relaxed">
+                    <li class="flex items-start gap-1.5">
+                      <span class="text-emerald-700 font-bold mt-0.5">•</span>
+                      <span>Entregar <strong>presupuestos desagregados</strong> y cronogramas realistas por escrito.</span>
+                    </li>
+                    <li class="flex items-start gap-1.5">
+                      <span class="text-emerald-700 font-bold mt-0.5">•</span>
+                      <span>Informar los desvíos <strong>apenas se detecten</strong> sin ocultamiento.</span>
+                    </li>
+                    <li class="flex items-start gap-1.5">
+                      <span class="text-emerald-700 font-bold mt-0.5">•</span>
+                      <span>Usar <strong>contratos claros con entregables verificables</strong> y asumir la transparencia como parte del servicio y no como un riesgo comercial.</span>
+                    </li>
+                  </ul>
+                </div>
+                <span class="mt-3 inline-block text-[10px] font-semibold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded border border-emerald-300 w-fit">
+                  Transparencia Fiduciaria
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- ===============================================================
+               SECCIÓN INFERIOR: SOMBRAS vs LUCES + DAMA DE LA JUSTICIA
+               (Exacta recreación visual de la lámina)
+               =============================================================== -->
+          <div class="mt-8 pt-6 border-t-2 border-stone-400/50">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+              
+              <!-- Columna Izquierda: Las Sombras de la Ética con Fondo de Ruinas -->
+              <div class="md:col-span-4 relative rounded-2xl overflow-hidden p-5 sombras-box text-white group">
+                <div class="absolute inset-0 opacity-20 group-hover:opacity-30 transition pointer-events-none">
+                  <img src="assets/infografia-ruinas-sombras.jpg" alt="Edificio en ruinas" class="w-full h-full object-cover" />
+                </div>
+                <div class="relative z-10">
+                  <div class="inline-flex items-center gap-2 mb-3 bg-red-950/80 px-3 py-1 rounded-full border border-red-800/80">
+                    <span class="text-base">☁️</span>
+                    <h4 class="font-serif font-bold text-red-200 text-sm sm:text-base uppercase tracking-wider">
+                      Las sombras de la ética
+                    </h4>
+                  </div>
+                  <ul class="space-y-2 text-xs sm:text-sm text-stone-200 font-medium">
+                    <li class="flex items-center gap-2">
+                      <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                      <span>Riesgos</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                      <span>Desigualdad</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                      <span>Daño a personas</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                      <span>Pérdida de confianza</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Columna Central: Estatua de la Dama de la Justicia -->
+              <div class="md:col-span-4 flex flex-col items-center justify-center text-center p-2">
+                <div class="relative w-32 h-32 sm:w-36 sm:h-36 rounded-2xl overflow-hidden border-2 border-gold-500 shadow-xl bg-amber-100/50 p-1 mb-2 group">
+                  <img src="assets/infografia-justicia-estatua.jpg" alt="Estatua de la Dama de la Justicia con Balanza"
+                    class="w-full h-full object-cover object-top rounded-xl filter contrast-105 group-hover:scale-105 transition duration-300" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 pointer-events-none"></div>
+                  <span class="absolute bottom-1 inset-x-0 text-white text-[9px] font-cinzel font-bold tracking-wider uppercase">
+                    Iustitia
+                  </span>
+                </div>
+                <h5 class="text-xs font-cinzel font-bold text-stone-900 uppercase tracking-widest mt-1">
+                  Dignidad &amp; Equidad
+                </h5>
+                <p class="text-[11px] text-stone-600 font-serif italic max-w-xs">
+                  "El ejercicio profesional solo adquiere valor cuando se consagra al bien común"
+                </p>
+              </div>
+
+              <!-- Columna Derecha: Las Luces de la Ética con Fondo de Ciudad Moderna -->
+              <div class="md:col-span-4 relative rounded-2xl overflow-hidden p-5 luces-box text-stone-900 group">
+                <div class="absolute inset-0 opacity-15 group-hover:opacity-25 transition pointer-events-none">
+                  <img src="assets/infografia-ciudad-luces.jpg" alt="Ciudad moderna y luminosa" class="w-full h-full object-cover" />
+                </div>
+                <div class="relative z-10">
+                  <div class="inline-flex items-center gap-2 mb-3 bg-amber-200/90 px-3 py-1 rounded-full border border-amber-300">
+                    <span class="text-base">☀️</span>
+                    <h4 class="font-serif font-bold text-amber-950 text-sm sm:text-base uppercase tracking-wider">
+                      Las luces de la ética
+                    </h4>
+                  </div>
+                  <ul class="space-y-2 text-xs sm:text-sm text-stone-900 font-medium">
+                    <li class="flex items-center gap-2">
+                      <span class="text-emerald-700 font-bold text-base">✓</span>
+                      <span>Inclusión</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="text-emerald-700 font-bold text-base">✓</span>
+                      <span>Seguridad</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="text-emerald-700 font-bold text-base">✓</span>
+                      <span>Transparencia</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="text-emerald-700 font-bold text-base">✓</span>
+                      <span>Bien común</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Cintillo Inferior Unificador con Laureles -->
+            <div class="mt-6 infographic-bottom-banner text-gold-400 p-4 rounded-xl text-center shadow-lg">
+              <p class="font-cinzel text-xs sm:text-sm md:text-base font-bold tracking-widest uppercase flex items-center justify-center gap-2 sm:gap-4 flex-wrap">
+                <span>🌿</span>
+                <span>ÉTICA EN ACCIÓN</span>
+                <span class="text-stone-400">=</span>
+                <span>MEJORES DECISIONES</span>
+                <span class="text-stone-400">=</span>
+                <span class="text-white drop-shadow">UNA SOCIEDAD MÁS JUSTA</span>
+                <span>🌿</span>
+              </p>
+            </div>
+
           </div>
 
         </div>
+      </div>
 
-        <!-- Caso 2: Algoritmos de Selección sin Auditar -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
-
-          <!-- Sombra 2 -->
-          <div
-            class="dichotomy-card museum-card rounded-xl p-6 bg-stone-900 text-stone-200 border-l-4 border-red-600 shadow-sm"
-            data-type="sombra">
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-bold text-red-400 uppercase tracking-wider flex items-center gap-1.5">
-                <span class="w-2 h-2 rounded-full bg-red-500"></span>
-                Sombra 2 · Negligencia en Sistemas
-              </span>
-              <span class="text-[10px] text-stone-400 bg-stone-800 px-2 py-0.5 rounded">Apelación a la Autoridad</span>
+      <!-- ===================================================================
+           VISTA 2: LÁMINA INFOGRÁFICA ORIGINAL (VISOR EN ALTA DEFINICIÓN)
+           =================================================================== -->
+      <div id="view-original-wrapper" class="hidden mb-12">
+        <div class="museum-card rounded-2xl p-6 bg-white border border-stone-200 shadow-lg text-center">
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-4 mb-4 border-b border-stone-200">
+            <div>
+              <h3 class="font-serif font-bold text-stone-900 text-xl text-left">
+                Lámina Infográfica Original: Mapa de Negligencias y Acciones Positivas
+              </h3>
+              <p class="text-xs text-stone-500 text-left">
+                Diseño infográfico de síntesis elaborado por el equipo — Formato editorial vintage
+              </p>
             </div>
-            <h4 class="text-lg font-serif font-bold text-white mb-2">
-              Implementación de algoritmos automatizados de selección y scoring sin auditoría de sesgos
-            </h4>
-            <p class="text-xs text-stone-300 leading-relaxed mb-4">
-              Desplegar sistemas de cribado curricular o scoring de créditos entrenados con datos históricos
-              discriminatorios, presentándolos como decisiones «objetivas e infalibles» por emanar de una máquina
-              inteligente.
-            </p>
-            <div class="p-3 bg-stone-800/80 rounded border border-stone-700 text-xs space-y-1.5 mb-3">
-              <p><strong class="text-red-300">Falacia que la sostiene:</strong> <em>Apelación a la autoridad</em> de la
-                técnica o de la gerencia («lo dice el software, por ende es matemáticamente imparcial»), ocultando los
-                sesgos de entrenamiento.</p>
-              <p><strong class="text-stone-300">Población afectada:</strong> Mujeres en edad fértil, graduados de
-                universidades de provincia y personas con discapacidad descartados sin derecho a explicación.</p>
+            <div class="flex items-center gap-2">
+              <a href="assets/mapa-negligencias-infografia.jpg" target="_blank" download="Mapa-Negligencias-Eticas-Infografia.jpg"
+                class="px-4 py-2 bg-navy-900 text-white rounded-lg text-xs font-semibold hover:bg-navy-800 transition shadow-sm flex items-center gap-1.5">
+                <span>⬇️</span>
+                <span>Descargar Lámina</span>
+              </a>
+              <button type="button" onclick="openInfographicModal()"
+                class="px-4 py-2 bg-gold-500 text-navy-950 rounded-lg text-xs font-bold hover:bg-gold-400 transition shadow-sm flex items-center gap-1.5">
+                <span>🔍</span>
+                <span>Pantalla Completa</span>
+              </button>
             </div>
           </div>
 
-          <!-- Luz 2 -->
-          <div class="dichotomy-card museum-card rounded-xl p-6 bg-white border-l-4 border-emerald-600 shadow-sm"
-            data-type="luz">
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-bold text-emerald-800 uppercase tracking-wider flex items-center gap-1.5">
-                <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
-                Luz 2 · Acción Positiva Profesional
+          <div class="relative max-w-4xl mx-auto rounded-xl overflow-hidden border-2 border-stone-300 shadow-xl bg-stone-900 group cursor-pointer"
+            onclick="openInfographicModal()">
+            <img src="assets/mapa-negligencias-infografia.jpg"
+              alt="Infografía completa: Mapa de negligencias éticas y acciones positivas"
+              class="w-full h-auto object-contain mx-auto filter brightness-95 group-hover:brightness-100 transition duration-300" />
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+              <span class="px-5 py-2.5 bg-white/95 text-navy-900 font-bold text-sm rounded-full shadow-lg border border-gold-500">
+                🔍 Clic para ampliar en pantalla completa
               </span>
-              <span
-                class="text-[10px] text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-medium border border-emerald-200">Gobernanza
-                Ética de TI</span>
-            </div>
-            <h4 class="text-lg font-serif font-bold text-stone-900 mb-2">
-              Auditoría periódica de datos y supervisión humana obligatoria (Human-in-the-Loop)
-            </h4>
-            <p class="text-xs text-stone-700 leading-relaxed mb-4">
-              Instituir metodologías rigurosas de depuración y balanceo de datos para neutralizar sesgos
-              socioculturales. Establecer que ninguna decisión algorítmica de alto impacto sobre personas sea unilateral
-              sin revisión humana.
-            </p>
-            <div class="p-3 bg-emerald-50/60 rounded border border-emerald-200 text-xs space-y-1.5 mb-3">
-              <p><strong class="text-emerald-900">Solución operativa:</strong> Elaborar matrices de explicabilidad en
-                lenguaje claro para las áreas usuarias, capacitar equipos en ética algorítmica y garantizar canales de
-                reclamo fundado.</p>
-              <p><strong class="text-stone-800">Impacto positivo:</strong> Democratización de oportunidades laborales,
-                justicia distributiva y erradicación de la discriminación algorítmica encubierta.</p>
             </div>
           </div>
-
         </div>
-
-        <!-- Caso 3: Presupuestos Maquillados y Posverdad -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
-
-          <!-- Sombra 3 -->
-          <div
-            class="dichotomy-card museum-card rounded-xl p-6 bg-stone-900 text-stone-200 border-l-4 border-red-600 shadow-sm"
-            data-type="sombra">
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-bold text-red-400 uppercase tracking-wider flex items-center gap-1.5">
-                <span class="w-2 h-2 rounded-full bg-red-500"></span>
-                Sombra 3 · Negligencia Transversal
-              </span>
-              <span class="text-[10px] text-stone-400 bg-stone-800 px-2 py-0.5 rounded">La Posverdad en Gestión</span>
-            </div>
-            <h4 class="text-lg font-serif font-bold text-white mb-2">
-              Maquillar presupuestos, plazos e informes de avance ante el cliente o la jefatura
-            </h4>
-            <p class="text-xs text-stone-300 leading-relaxed mb-4">
-              Prometer costos y cronogramas irreales que se sabe de antemano que no se podrán cumplir, o reportar
-              avances de software y obra inflados con el único afán de ganar licitaciones o cobrar valorizaciones
-              anticipadas.
-            </p>
-            <div class="p-3 bg-stone-800/80 rounded border border-stone-700 text-xs space-y-1.5 mb-3">
-              <p><strong class="text-red-300">Falacia / Distorsión:</strong> <em>Posverdad</em>. Las emociones, el
-                optimismo ficticio y la presión de ventas desplazan a los hechos empíricos; al surgir el sobrecosto o
-                retraso, se culpa al cliente o a factores fortuitos.</p>
-              <p><strong class="text-stone-300">Población afectada:</strong> Pequeñas empresas y familias que invierten
-                sus ahorros en remodelaciones o sistemas que quedan paralizados o inutilizables.</p>
-            </div>
-          </div>
-
-          <!-- Luz 3 -->
-          <div class="dichotomy-card museum-card rounded-xl p-6 bg-white border-l-4 border-emerald-600 shadow-sm"
-            data-type="luz">
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-bold text-emerald-800 uppercase tracking-wider flex items-center gap-1.5">
-                <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
-                Luz 3 · Acción Positiva Profesional
-              </span>
-              <span
-                class="text-[10px] text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-medium border border-emerald-200">Transparencia
-                Contractual</span>
-            </div>
-            <h4 class="text-lg font-serif font-bold text-stone-900 mb-2">
-              Presupuestos desagregados, cronogramas verificables e informes de verdad técnica
-            </h4>
-            <p class="text-xs text-stone-700 leading-relaxed mb-4">
-              Formalizar contratos con especificaciones transparentes y entregables auditables. Comunicar inmediatamente
-              cualquier desvío técnico o presupuestal apenas sea identificado, asumiendo la honestidad como valor
-              medular de la reputación.
-            </p>
-            <div class="p-3 bg-emerald-50/60 rounded border border-emerald-200 text-xs space-y-1.5 mb-3">
-              <p><strong class="text-emerald-900">Solución operativa:</strong> Adoptar herramientas de seguimiento con
-                trazas inmutables, presupuestos basados en análisis de precios unitarios reales y provisiones claras de
-                contingencia.</p>
-              <p><strong class="text-stone-800">Impacto positivo:</strong> Clima de confianza fiduciaria, protección del
-                patrimonio familiar y erradicación del chantaje del adicional de obra.</p>
-            </div>
-          </div>
-
-        </div>
-
       </div>
 
       <!-- Pregunta Socrática Formulada por el Equipo -->
@@ -1026,23 +1410,12 @@
         </div>
 
         <p class="academic-text text-sm sm:text-base font-serif italic text-stone-200 leading-relaxed mb-6">
-          «Elegimos <em>Las Meninas</em> y <em>Manos Dibujando</em> como metáforas porque lo esencial de nuestro
-          ejercicio ocurre detrás del lienzo y del código: en la estructura que el usuario final no ve, pero que
-          sostiene de manera incondicional su seguridad, su autonomía y su confianza (AC1). Ese cuidado tiene
-          destinatarios concretos en la sociedad peruana: personas con discapacidad privadas de accesibilidad, adultos
-          mayores confinados por entornos hostiles, postulantes excluidos por sesgos algorítmicos y familias que
-          arriesgan sus ahorros; ante quienes asumimos una responsabilidad deontológica ineludible (AC2), fundamentada
-          en una jerarquía axiológica que sitúa a los valores vitales y espirituales por encima del lucro económico
-          instrumental (AC3). Reconocer con honestidad intelectual las fallas de nuestro entorno —obras inseguras
-          justificadas por costumbre, algoritmos sin auditar y presupuestos maquillados— no debilita nuestro compromiso,
-          sino que lo emancipa de la complacencia (AC4). Como en el <strong>Mito de la Caverna</strong> de Platón, nos
-          comprometemos a no confundir las sombras de la costumbre con la luz de lo correcto, rompiendo el ciclo de la
-          posverdad para mirar y transformar lo que otros prefieren ignorar.»
+          «Elegimos <em>Las Meninas</em> porque nos muestra que una obra no depende únicamente de lo que vemos, sino también de todo lo que sucede detrás de ella. Esta idea representa nuestro compromiso de actuar con ética, reconociendo los errores y evitando que la costumbre, la presión económica o la falta de atención nos lleven a tomar decisiones que perjudiquen a las personas. Por ello, buscamos que nuestro trabajo refleje responsabilidad, honestidad y respeto por los demás.»
         </p>
 
         <div
           class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-stone-700 text-xs text-stone-400">
-          <span>Integración curricular de los 4 Aprendizajes Colaborativos (AC1 + AC2 + AC3 + AC4)</span>
+          <span>Manifiesto de Identidad Ética e Integración Curricular Multidisciplinaria</span>
           <span class="text-gold-400 font-semibold font-mono">Equipo “LO QUE SOMOS” · 100% Participación</span>
         </div>
       </div>
@@ -1067,9 +1440,6 @@
         </p>
         <p class="apa-reference">
           Beauchamp, T. L., & Childress, J. F. (2019). <em>Principles of biomedical ethics</em> (8.ª ed.). Oxford University Press.
-        </p>
-        <p class="apa-reference">
-          Escher, M. C. (1948). <em>Drawing hands</em> [Litografía]. Baarn, Países Bajos. Colección Fundación M. C. Escher.
         </p>
         <p class="apa-reference">
           Gaarder, J. (1991). <em>El mundo de Sofía: Novela sobre la historia de la filosofía</em>. Ediciones Siruela.
@@ -1124,15 +1494,46 @@
           ✕
         </button>
       </div>
-      <p id="modal-hotspot-text" class="text-xs sm:text-sm text-stone-700 leading-relaxed mb-6">
+      <div id="modal-hotspot-text" class="text-xs sm:text-sm text-stone-700 leading-relaxed mb-6">
         Contenido del análisis.
-      </p>
+      </div>
       <div class="flex justify-end">
         <button
           onclick="document.getElementById('hotspot-modal').classList.add('hidden'); document.getElementById('hotspot-modal').classList.remove('flex');"
           class="px-4 py-1.5 bg-navy-800 text-white rounded text-xs font-semibold hover:bg-stone-900 transition">
           Entendido
         </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Lightbox para Ampliar la Lámina Infográfica Completa -->
+  <div id="infographic-lightbox-modal"
+    class="hidden fixed inset-0 z-50 bg-stone-950/90 backdrop-blur-md items-center justify-center p-2 sm:p-6 overflow-auto">
+    <div class="relative max-w-5xl w-full bg-stone-900 rounded-2xl p-4 sm:p-6 shadow-2xl border border-stone-700 flex flex-col items-center">
+      <div class="w-full flex items-center justify-between pb-3 mb-3 border-b border-stone-700 text-white">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">⚖️</span>
+          <div>
+            <h4 class="font-serif font-bold text-base sm:text-lg text-gold-400 leading-tight">Mapa de Negligencias Éticas y Acciones Positivas</h4>
+            <p class="text-[11px] text-stone-400">Lámina de Síntesis Curricular (AC4) — Vista en Alta Resolución</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="assets/mapa-negligencias-infografia.jpg" target="_blank" download="Mapa-Negligencias-Eticas-Infografia.jpg"
+            class="px-3 py-1.5 bg-stone-800 hover:bg-stone-700 text-stone-200 rounded-lg text-xs font-semibold transition border border-stone-600">
+            Descargar ⬇️
+          </a>
+          <button onclick="closeInfographicModal()"
+            class="w-8 h-8 rounded-full bg-stone-800 hover:bg-stone-700 flex items-center justify-center text-white transition text-sm">
+            ✕
+          </button>
+        </div>
+      </div>
+      <div class="w-full max-h-[80vh] overflow-auto rounded-xl border border-stone-800 bg-stone-950 p-2 flex justify-center">
+        <img src="assets/mapa-negligencias-infografia.jpg"
+          alt="Infografía completa: Mapa de negligencias éticas y acciones positivas"
+          class="max-w-full h-auto object-contain rounded-lg shadow-md" />
       </div>
     </div>
   </div>

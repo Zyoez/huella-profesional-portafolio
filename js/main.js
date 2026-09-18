@@ -104,48 +104,74 @@ function initWordCounter() {
    3. Hotspots interactivos en las obras artísticas
    ========================================================================== */
 const hotspotData = {
-  // Las Meninas (Arquitectura de Interiores)
+  // Las Meninas (Interdisciplinario: Arquitectura de Interiores & Ing. Empresarial y de Sistemas)
   'meninas-1': {
-    title: '1. El bastidor oculto: La calidad que no se ve',
-    subtitle: 'La estructura sostiene todo lo que está a la vista',
-    text: 'El pintor trabaja frente a un gran bastidor que nos da la espalda. Esto nos enseña que lo más importante del trabajo profesional muchas veces no está a simple vista: en arquitectura de interiores, no se trata solo de que un lugar se vea bonito para una foto, sino de que su estructura sea sólida, sus rutas de evacuación sean seguras y los materiales protejan la vida de las personas.'
+    title: '1. El bastidor oculto: Calidad técnica e infraestructura invisible',
+    subtitle: 'La estructura portante y el backend que sostienen todo lo que está a la vista',
+    text: `
+      <p class="mb-2 text-stone-700">El pintor trabaja detrás de un imponente bastidor de espaldas al espectador. Esto nos enseña que lo verdaderamente crucial de la praxis profesional radica en el rigor técnico que no salta a simple vista:</p>
+      <div class="space-y-2">
+        <div class="bg-amber-50/80 p-3 rounded-lg border border-amber-200">
+          <strong class="text-amber-900 font-bold block text-xs mb-1">🏛️ Arquitectura de Interiores:</strong>
+          <p class="text-stone-700 text-xs leading-relaxed">No se trata solo de crear ambientes estéticamente atractivos para una fotografía o render, sino de garantizar cálculos estructurales rigurosos, ductos de ventilación, aislamiento ignífugo y vías de escape seguras que salvaguardan la vida ante cualquier emergencia.</p>
+        </div>
+        <div class="bg-sky-50/80 p-3 rounded-lg border border-sky-200">
+          <strong class="text-sky-900 font-bold block text-xs mb-1">💻 Ingeniería Empresarial y de Sistemas:</strong>
+          <p class="text-stone-700 text-xs leading-relaxed">Representa la arquitectura de software oculta, el diseño de bases de datos normalizadas, la seguridad perimetral y el backend. Si el código interno es frágil o descuidado, toda la interfaz corporativa colapsa vulnerando la seguridad y datos de los usuarios.</p>
+        </div>
+      </div>
+    `
   },
   'meninas-2': {
-    title: '2. El espejo al fondo: Las personas son lo primero',
-    subtitle: 'El usuario siempre en el centro del diseño',
-    text: 'Al fondo de la habitación hay un espejo que refleja a quienes están mirando la escena. Esto nos recuerda que el objetivo final de cualquier proyecto no es el ego del profesional ni solo obtener ganancias, sino servir y cuidar el bienestar de las personas reales que van a habitar y usar ese espacio todos los días.'
+    title: '2. El espejo al fondo: Las personas y usuarios en el centro',
+    subtitle: 'Diseñar para el ser humano y el bien común, jamás para el ego personal',
+    text: `
+      <p class="mb-2 text-stone-700">Al fondo de la habitación, un espejo refleja a los reyes que contemplan la escena, situando el propósito de la obra fuera de ella, en los observadores:</p>
+      <div class="space-y-2">
+        <div class="bg-amber-50/80 p-3 rounded-lg border border-amber-200">
+          <strong class="text-amber-900 font-bold block text-xs mb-1">🏛️ Arquitectura de Interiores:</strong>
+          <p class="text-stone-700 text-xs leading-relaxed">Recuerda que el hábitat espacial no se concibe para la vanidad del proyectista ni para el ahorro negligente de costos, sino para brindar dignidad, confort térmico, salud física y bienestar psicosocial a las personas que lo habitarán diariamente.</p>
+        </div>
+        <div class="bg-sky-50/80 p-3 rounded-lg border border-sky-200">
+          <strong class="text-sky-900 font-bold block text-xs mb-1">💻 Ingeniería Empresarial y de Sistemas:</strong>
+          <p class="text-stone-700 text-xs leading-relaxed">Materializa el diseño centrado en el usuario (UX/Human-Centered Design) y la ética kantiana: los sistemas y flujos de automatización deben facilitar la vida laboral y ciudadana, reconociendo a la persona como fin supremo y nunca como mero recurso descartable.</p>
+        </div>
+      </div>
+    `
   },
   'meninas-3': {
-    title: '3. El espacio compartido: Inclusión y accesibilidad',
-    subtitle: 'Ambientes pensados para todas las personas',
-    text: 'En la pintura conviven niños, adultos y personas con distintas características físicas. En la práctica profesional, esto simboliza la necesidad de crear espacios cómodos, bien iluminados y libres de obstáculos, donde personas con discapacidad, niños y adultos mayores puedan desplazarse con total libertad y seguridad.'
+    title: '3. El espacio compartido: Inclusión, accesibilidad universal y equidad',
+    subtitle: 'Espacios físicos y plataformas digitales libres de barreras y discriminación',
+    text: `
+      <p class="mb-2 text-stone-700">En el salón conviven armónicamente personajes con diversas características físicas, estaturas y edades en una atmósfera unificada:</p>
+      <div class="space-y-2">
+        <div class="bg-amber-50/80 p-3 rounded-lg border border-amber-200">
+          <strong class="text-amber-900 font-bold block text-xs mb-1">🏛️ Arquitectura de Interiores:</strong>
+          <p class="text-stone-700 text-xs leading-relaxed">Representa el principio de diseño universal: suprimir desniveles innecesarios, incluir rampas normadas, señalética comprensible y pasajes accesibles para personas con discapacidad motriz, niños y adultos mayores.</p>
+        </div>
+        <div class="bg-sky-50/80 p-3 rounded-lg border border-sky-200">
+          <strong class="text-sky-900 font-bold block text-xs mb-1">💻 Ingeniería Empresarial y de Sistemas:</strong>
+          <p class="text-stone-700 text-xs leading-relaxed">Encarna la accesibilidad digital (estándares WCAG) y la equidad algorítmica: garantizar que los modelos de software empresarial no contengan sesgos que discriminen a postulantes o clientes por su edad, condición o procedencia.</p>
+        </div>
+      </div>
+    `
   },
   'meninas-4': {
-    title: '4. La puerta abierta: Compromiso con nuestra sociedad',
-    subtitle: 'La profesión conectada con la realidad del país',
-    text: 'Al fondo, una puerta abierta deja entrar la luz del exterior. Nos recuerda que un profesional no trabaja aislado en una oficina, sino dentro de la realidad de nuestro país. Cada plano o diseño debe tomar en cuenta las necesidades de la comunidad y aportar a mejorar la vida de los peruanos.'
-  },
-
-  // Manos Dibujando (Ingeniería Empresarial y de Sistemas)
-  'escher-1': {
-    title: '1. La mano que dibuja: La responsabilidad de quien programa',
-    subtitle: 'Detrás de cada sistema hay una decisión humana',
-    text: 'Una mano traza y da forma a la otra. En ingeniería de sistemas, cada línea de código y cada regla dentro de un software es decidida por una persona. La tecnología no es mágica ni neutral: siempre refleja los valores, el cuidado o los descuidos de quien la programa.'
-  },
-  'escher-2': {
-    title: '2. El impacto social: La tecnología cambia vidas',
-    subtitle: 'Las decisiones de un sistema afectan a las personas',
-    text: 'La segunda mano dibuja a la primera, formando un ciclo donde ambas se influyen. Cuando un sistema se implementa en empresas, bancos o entidades públicas, sus decisiones automáticas afectan directamente si una persona consigue un empleo, un crédito o una atención oportuna.'
-  },
-  'escher-3': {
-    title: '3. La base de datos: Cuidar que no haya prejuicios',
-    subtitle: 'La información del pasado puede repetir errores',
-    text: 'Ambas manos nacen de la misma hoja de papel. El papel representa los datos con los que entrenamos a los sistemas. Si esa información histórica contiene errores o discriminación, el sistema aprenderá y repetirá esas mismas fallas si no lo corregimos a tiempo.'
-  },
-  'escher-4': {
-    title: '4. La supervisión humana: No dejar todo en manos de máquinas',
-    subtitle: 'El profesional siempre debe revisar y responder',
-    text: 'El dibujo muestra un ciclo infinito que solo se entiende cuando lo miramos desde fuera. En tecnología, ninguna decisión importante que afecte los derechos o la dignidad de una persona debe dejarse a ciegas a una máquina; siempre debe haber un profesional responsable revisando y garantizando un trato justo.'
+    title: '4. La puerta abierta: Transparencia y conexión con la sociedad',
+    subtitle: 'El deber ético de conectar nuestras disciplinas con el entorno y la realidad nacional',
+    text: `
+      <p class="mb-2 text-stone-700">Al fondo, una puerta iluminada conecta la estancia palaciega con el exterior a través de una figura que contempla ambos mundos:</p>
+      <div class="space-y-2">
+        <div class="bg-amber-50/80 p-3 rounded-lg border border-amber-200">
+          <strong class="text-amber-900 font-bold block text-xs mb-1">🏛️ Arquitectura de Interiores:</strong>
+          <p class="text-stone-700 text-xs leading-relaxed">Exige que el diseño interior no sea una burbuja aislada: debe responder al contexto urbano, respetar la sostenibilidad bioclimática del entorno peruano y contribuir activamente a mejorar la calidad de vida barrial.</p>
+        </div>
+        <div class="bg-sky-50/80 p-3 rounded-lg border border-sky-200">
+          <strong class="text-sky-900 font-bold block text-xs mb-1">💻 Ingeniería Empresarial y de Sistemas:</strong>
+          <p class="text-stone-700 text-xs leading-relaxed">Simboliza la transparencia técnica, la auditoría algorítmica y la rendición de cuentas pública. Un ingeniero no debe escudarse en el «secreto corporativo» o la «caja negra» para ocultar fallas que afecten a los ciudadanos.</p>
+        </div>
+      </div>
+    `
   }
 };
 
@@ -166,7 +192,7 @@ function initArtworkHotspots() {
       if (data) {
         modalTitle.textContent = data.title;
         modalSubtitle.textContent = data.subtitle;
-        modalText.textContent = data.text;
+        modalText.innerHTML = data.text;
         modal.classList.remove('hidden');
         modal.classList.add('flex');
       }
@@ -448,39 +474,116 @@ function initSchelerPyramid() {
 }
 
 /* ==========================================================================
-   6. Conmutador Sombras (Negligencias) vs Luces (Acciones Positivas)
+   6. Infografía: Mapa de Negligencias Éticas y Acciones Positivas
    ========================================================================== */
 function initShadowsLightsToggle() {
-  const filterBtns = document.querySelectorAll('.filter-view-btn');
-  const cards = document.querySelectorAll('.dichotomy-card');
+  const filterBtns = document.querySelectorAll('.filter-sit-btn');
+  const rows = document.querySelectorAll('.infographic-row');
+  const cellsSombras = document.querySelectorAll('.cell-sombras');
+  const cellsLuces = document.querySelectorAll('.cell-luces');
 
   if (!filterBtns.length) return;
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      const mode = btn.getAttribute('data-filter');
+      const filter = btn.getAttribute('data-filter');
 
+      // Update button styles
       filterBtns.forEach(b => {
         b.classList.remove('bg-stone-900', 'text-white');
-        b.classList.add('bg-stone-100', 'text-stone-700');
+        b.classList.add('bg-stone-50', 'text-stone-700');
       });
       btn.classList.add('bg-stone-900', 'text-white');
-      btn.classList.remove('bg-stone-100', 'text-stone-700');
+      btn.classList.remove('bg-stone-50', 'text-stone-700');
 
-      cards.forEach(card => {
-        const type = card.getAttribute('data-type');
-        if (mode === 'all') {
-          card.classList.remove('hidden');
-        } else if (mode === 'sombras') {
-          if (type === 'sombra') card.classList.remove('hidden');
-          else card.classList.add('hidden');
-        } else if (mode === 'luces') {
-          if (type === 'luz') card.classList.remove('hidden');
-          else card.classList.add('hidden');
-        }
-      });
+      if (filter === 'all') {
+        rows.forEach(r => {
+          r.classList.remove('hidden', 'row-dimmed');
+        });
+        cellsSombras.forEach(c => c.classList.remove('infographic-cell-dimmed'));
+        cellsLuces.forEach(c => c.classList.remove('infographic-cell-dimmed'));
+      } else if (filter === 'sombras') {
+        rows.forEach(r => {
+          r.classList.remove('hidden', 'row-dimmed');
+        });
+        cellsSombras.forEach(c => c.classList.remove('infographic-cell-dimmed'));
+        cellsLuces.forEach(c => c.classList.add('infographic-cell-dimmed'));
+      } else if (filter === 'luces') {
+        rows.forEach(r => {
+          r.classList.remove('hidden', 'row-dimmed');
+        });
+        cellsLuces.forEach(c => c.classList.remove('infographic-cell-dimmed'));
+        cellsSombras.forEach(c => c.classList.add('infographic-cell-dimmed'));
+      } else {
+        // filter by situation (sit-1, sit-2, sit-3)
+        rows.forEach(r => {
+          const sitId = r.getAttribute('data-sit-id');
+          if (sitId === filter) {
+            r.classList.remove('hidden', 'row-dimmed');
+          } else {
+            r.classList.add('hidden');
+          }
+        });
+        cellsSombras.forEach(c => c.classList.remove('infographic-cell-dimmed'));
+        cellsLuces.forEach(c => c.classList.remove('infographic-cell-dimmed'));
+      }
     });
   });
+
+  const modal = document.getElementById('infographic-lightbox-modal');
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeInfographicModal();
+    });
+  }
+}
+
+function switchInfographicView(mode) {
+  const interactiveWrapper = document.getElementById('view-interactive-wrapper');
+  const originalWrapper = document.getElementById('view-original-wrapper');
+  const tabInteractive = document.getElementById('tab-interactive-view');
+  const tabOriginal = document.getElementById('tab-original-view');
+  const filtersBar = document.getElementById('interactive-filters-bar');
+
+  if (!interactiveWrapper || !originalWrapper) return;
+
+  if (mode === 'interactive') {
+    interactiveWrapper.classList.remove('hidden');
+    originalWrapper.classList.add('hidden');
+    if (filtersBar) filtersBar.classList.remove('hidden');
+
+    tabInteractive.classList.add('bg-stone-900', 'text-white');
+    tabInteractive.classList.remove('text-stone-700');
+    tabOriginal.classList.remove('bg-stone-900', 'text-white');
+    tabOriginal.classList.add('text-stone-700');
+  } else {
+    interactiveWrapper.classList.add('hidden');
+    originalWrapper.classList.remove('hidden');
+    if (filtersBar) filtersBar.classList.add('hidden');
+
+    tabOriginal.classList.add('bg-stone-900', 'text-white');
+    tabOriginal.classList.remove('text-stone-700');
+    tabInteractive.classList.remove('bg-stone-900', 'text-white');
+    tabInteractive.classList.add('text-stone-700');
+  }
+}
+
+function openInfographicModal() {
+  const modal = document.getElementById('infographic-lightbox-modal');
+  if (modal) {
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeInfographicModal() {
+  const modal = document.getElementById('infographic-lightbox-modal');
+  if (modal) {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = '';
+  }
 }
 
 /* ==========================================================================

@@ -177,8 +177,117 @@ body.presentation-mode .key-stat {
 }
 
 /* ==========================================================================
-   Formato Estándar APA 7: Sangría Francesa (Hanging Indent)
+   Estilos de Alta Fidelidad para la Infografía Editorial:
+   "Mapa de Negligencias Éticas y Acciones Positivas"
    ========================================================================== */
+.infographic-poster {
+  background-color: #F4EDE0;
+  background-image: 
+    radial-gradient(#D6CEBE 0.75px, transparent 0.75px),
+    linear-gradient(to bottom, rgba(235, 225, 205, 0.4), rgba(244, 237, 224, 0.7));
+  background-size: 20px 20px, 100% 100%;
+  border: 2px solid #D5CBB8;
+  border-radius: 1.25rem;
+  box-shadow: 
+    inset 0 0 50px rgba(184, 134, 11, 0.08),
+    inset 0 0 100px rgba(100, 80, 50, 0.04),
+    0 16px 40px -8px rgba(40, 30, 20, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Notas estilo papel rasgado / pegado con cinta */
+.infographic-note {
+  background: #FAF6ED;
+  border: 1px dashed #C8BEA8;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.infographic-note:hover {
+  transform: scale(1.03) rotate(0deg) !important;
+}
+
+/* Tipografía de título vintage */
+.infographic-title-vintage {
+  font-family: 'Cinzel', 'Cormorant Garamond', Georgia, serif;
+  letter-spacing: 0.04em;
+  color: #1F1C18;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.8);
+}
+
+/* Celdas de las 5 columnas con los colores exactos de la lámina */
+.col-card-situacion {
+  background-color: #F6F1E6;
+  border: 1.5px solid #DED4C0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.col-card-negligencia {
+  background-color: #FBF0EB;
+  border: 1.5px solid #ECD2C6;
+  box-shadow: 0 2px 8px rgba(180, 70, 50, 0.05);
+}
+
+.col-card-falacia {
+  background-color: #F3F6EB;
+  border: 1.5px solid #D8E2C6;
+  box-shadow: 0 2px 8px rgba(80, 120, 50, 0.05);
+}
+
+.col-card-vulnerable {
+  background-color: #FAF1E8;
+  border: 1.5px solid #E9D5C4;
+  box-shadow: 0 2px 8px rgba(150, 100, 60, 0.05);
+}
+
+.col-card-accion {
+  background-color: #ECF6EE;
+  border: 1.5px solid #C5E4CD;
+  box-shadow: 0 2px 8px rgba(40, 140, 70, 0.06);
+}
+
+/* Transiciones interactivas en las filas */
+.infographic-row {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.infographic-row:hover {
+  transform: translateY(-2px);
+}
+
+.infographic-row.row-dimmed {
+  opacity: 0.25;
+  filter: grayscale(85%);
+  pointer-events: none;
+}
+
+.infographic-cell-dimmed {
+  opacity: 0.2;
+  filter: grayscale(90%);
+}
+
+/* Cajas de Sombras y Luces del panel inferior */
+.sombras-box {
+  background-color: #242220;
+  border: 1px solid #443E3A;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.luces-box {
+  background-color: #FAF4E4;
+  border: 1.5px solid #E6D5A8;
+  box-shadow: 3px 5px 15px rgba(184, 134, 11, 0.15);
+}
+
+/* Cintillo unificador inferior */
+.infographic-bottom-banner {
+  background: linear-gradient(135deg, #1C1917 0%, #292524 50%, #1C1917 100%);
+  border: 1.5px solid #B8860B;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Formato Estándar APA 7: Sangría Francesa (Hanging Indent) */
 .apa-reference {
   padding-left: 2.5rem !important;
   text-indent: -2.5rem !important;
