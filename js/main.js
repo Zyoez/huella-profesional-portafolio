@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initPresentationMode();
   initSmoothScroll();
   initCoverCarousel();
+  initPodcastSection();
+  initVideoReactionSection();
+  initEc3InfographicSection();
 });
 
 /* ==========================================================================
@@ -729,5 +732,174 @@ function initCoverCarousel() {
 
   // Iniciar carrusel automático
   startAutoplay();
+}
+
+/* ==========================================================================
+   10. Sección AC5-AC6-AC7: Comparador Kant vs. Mill, Acordeón de Guion y Filtro de Normas
+   ========================================================================== */
+function initPodcastSection() {
+  // A. Comparador Kant vs. Mill (AC6)
+  const kmData = {
+    etica: {
+      label: '¿Qué hace que una acción sea ética?',
+      kant: 'Cumplir con el deber moral y respetar la dignidad humana, independientemente de las consecuencias.',
+      mill: 'Buscar la mayor felicidad y el bienestar general para el mayor número de personas.'
+    },
+    consecuencias: {
+      label: '¿Importan las consecuencias?',
+      kant: 'No son lo que determina la moralidad. Lo importante es actuar por buena voluntad y respetar la ley moral.',
+      mill: 'Sí. Las consecuencias son fundamentales para evaluar si una acción es correcta, según el bienestar que genera.'
+    },
+    bien: {
+      label: '¿Qué es el bien?',
+      kant: 'Cumplir el deber y tratar a todas las personas como fines en sí mismas, nunca solo como medios.',
+      mill: 'Lograr la mayor felicidad posible para la mayoría y favorecer el bienestar colectivo.'
+    },
+    dilema: {
+      label: 'Argumento en el dilema del equipo',
+      kant: 'Firmar el expediente con recortes que comprometen la accesibilidad o la privacidad vulnera el deber moral, porque perjudica la dignidad de las personas. Además, ocultar estas deficiencias no sería una regla moral aceptable para todos.',
+      mill: 'Firmar el expediente podría permitir que el hospital empiece a funcionar antes y atienda a miles de personas. Desde esta perspectiva, se evaluaría si los beneficios para la población superan los daños que generan los recortes.'
+    },
+    debilidad: {
+      label: 'Debilidad del argumento',
+      kant: 'Rigidez absoluta: mantener los principios sin considerar suficientemente la urgencia podría retrasar la apertura del hospital y perjudicar a quienes necesitan atención médica.',
+      mill: 'Sacrificio de minorías: priorizar el beneficio de la mayoría podría justificar riesgos para pacientes vulnerables, como la falta de accesibilidad o de protección adecuada de sus datos.'
+    }
+  };
+
+  const kmButtons = document.querySelectorAll('.km-tab-btn');
+  const kmKantLabel = document.getElementById('km-kant-label');
+  const kmKantText = document.getElementById('km-kant-text');
+  const kmMillLabel = document.getElementById('km-mill-label');
+  const kmMillText = document.getElementById('km-mill-text');
+
+  kmButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const key = btn.getAttribute('data-km-tab');
+      const entry = kmData[key];
+      if (!entry) return;
+
+      kmButtons.forEach(b => {
+        b.classList.remove('bg-navy-900', 'text-white', 'shadow-sm', 'font-bold');
+        b.classList.add('bg-stone-100', 'text-stone-700', 'font-semibold');
+      });
+      btn.classList.add('bg-navy-900', 'text-white', 'shadow-sm', 'font-bold');
+      btn.classList.remove('bg-stone-100', 'text-stone-700', 'font-semibold');
+
+      if (kmKantLabel) kmKantLabel.textContent = entry.label;
+      if (kmKantText) kmKantText.textContent = entry.kant;
+      if (kmMillLabel) kmMillLabel.textContent = entry.label;
+      if (kmMillText) kmMillText.textContent = entry.mill;
+    });
+  });
+
+  // B. Acordeón del Guion v.2 (AC6)
+  const accButtons = document.querySelectorAll('.script-acc-btn');
+  accButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const panel = btn.nextElementSibling;
+      const icon = btn.querySelector('.script-acc-icon');
+      const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+      btn.setAttribute('aria-expanded', String(!isExpanded));
+      if (panel) panel.classList.toggle('hidden', isExpanded);
+      if (icon) icon.textContent = isExpanded ? '+' : '−';
+    });
+  });
+
+  // C. Filtro de Normas de Conducta (AC7)
+  const normFilterButtons = document.querySelectorAll('.norm-filter-btn');
+  const normCards = document.querySelectorAll('.norm-card');
+
+  normFilterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.getAttribute('data-norm-filter');
+
+      normFilterButtons.forEach(b => {
+        b.classList.remove('bg-navy-900', 'text-white', 'shadow-sm', 'font-bold');
+        b.classList.add('bg-white', 'border', 'border-stone-300', 'text-stone-700', 'font-semibold');
+      });
+      btn.classList.add('bg-navy-900', 'text-white', 'shadow-sm', 'font-bold');
+      btn.classList.remove('bg-white', 'border', 'border-stone-300', 'text-stone-700', 'font-semibold');
+
+      normCards.forEach(card => {
+        const types = (card.getAttribute('data-norm-types') || '').split(/\s+/);
+        const show = filter === 'all' || types.includes(filter);
+        card.classList.toggle('hidden', !show);
+      });
+    });
+  });
+}
+
+/* ==========================================================================
+   11. Sección EC2 (AC8): Filtro de artículos deontológicos (CIP / CAP)
+   ========================================================================== */
+function initVideoReactionSection() {
+  const filterButtons = document.querySelectorAll('.code-filter-btn');
+  const articleCards = document.querySelectorAll('.code-article-card');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.getAttribute('data-code-filter');
+
+      filterButtons.forEach(b => {
+        b.classList.remove('bg-navy-900', 'text-white', 'shadow-sm', 'font-bold');
+        b.classList.add('bg-white', 'border', 'border-stone-300', 'text-stone-700', 'font-semibold');
+      });
+      btn.classList.add('bg-navy-900', 'text-white', 'shadow-sm', 'font-bold');
+      btn.classList.remove('bg-white', 'border', 'border-stone-300', 'text-stone-700', 'font-semibold');
+
+      articleCards.forEach(card => {
+        const org = card.getAttribute('data-code-org');
+        const show = filter === 'all' || org === filter;
+        card.classList.toggle('hidden', !show);
+      });
+    });
+  });
+}
+
+/* ==========================================================================
+   12. Sección EC3 (AC10-AC11): Selector de Capas y Lightbox de Infografía
+   ========================================================================== */
+function initEc3InfographicSection() {
+  const tabButtons = document.querySelectorAll('.ec3-tab-btn');
+  const capa1Panel = document.getElementById('ec3-panel-capa1');
+  const capa2Panel = document.getElementById('ec3-panel-capa2');
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.getAttribute('data-ec3-tab');
+
+      tabButtons.forEach(b => {
+        b.classList.remove('bg-navy-900', 'text-white', 'shadow-sm', 'font-bold');
+        b.classList.add('bg-white', 'border', 'border-stone-300', 'text-stone-700', 'font-semibold');
+      });
+      btn.classList.add('bg-navy-900', 'text-white', 'shadow-sm', 'font-bold');
+      btn.classList.remove('bg-white', 'border', 'border-stone-300', 'text-stone-700', 'font-semibold');
+
+      if (capa1Panel && capa2Panel) {
+        capa1Panel.classList.toggle('hidden', target !== 'capa1');
+        capa2Panel.classList.toggle('hidden', target !== 'capa2');
+      }
+    });
+  });
+}
+
+function openEc3InfographicModal() {
+  const modal = document.getElementById('ec3-infographic-lightbox-modal');
+  if (modal) {
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeEc3InfographicModal() {
+  const modal = document.getElementById('ec3-infographic-lightbox-modal');
+  if (modal) {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = '';
+  }
 }
 
